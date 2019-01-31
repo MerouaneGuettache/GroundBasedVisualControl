@@ -1,0 +1,9 @@
+--------------- Build Started: 12/10/2015 15:11:07 Project: VDAC Example, Configuration: ARM GCC 4.8.4 Debug ---------------
+cydsfit.exe -.appdatapath "C:\Users\Digi-Key\AppData\Local\Cypress Semiconductor\PSoC Creator\3.2" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p "C:\Users\Digi-Key\Documents\PSoC Creator\VDAC Example\VDAC Example.cydsn\VDAC Example.cyprj" -d CY8C5888LTI-LP097 -s "C:\Users\Digi-Key\Documents\PSoC Creator\VDAC Example\VDAC Example.cydsn\Generated_Source\PSoC5" -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+Elaborating Design...
+ADD: sdb.M0017: error: No drivers on signal "Net_56", bit(s) "0".
+ * C:\Users\Digi-Key\Documents\PSoC Creator\VDAC Example\VDAC Example.cydsn\TopDesign\TopDesign.cysch (Signal: Net_56)
+ * C:\Users\Digi-Key\Documents\PSoC Creator\VDAC Example\VDAC Example.cydsn\TopDesign\TopDesign.cysch (Shape_14)
+ * C:\Users\Digi-Key\Documents\PSoC Creator\VDAC Example\VDAC Example.cydsn\TopDesign\TopDesign.cysch (Shape_15)
+Error: cdf.M0005: CyDsFit aborted due to errors, please address all errors and rerun CyDsFit. (App=cydsfit)
+--------------- Build Failed: 12/10/2015 15:11:11 ---------------

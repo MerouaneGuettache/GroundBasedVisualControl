@@ -1,0 +1,1375 @@
+ARM GAS  C:\Users\Digi-Key\AppData\Local\Temp\ccPbXRUv.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"cymetadata.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.global	cy_metadata
+  19              		.global	cy_meta_flashprotect
+  20              		.global	cy_meta_wonvl
+  21              		.global	cy_meta_custnvl
+  22              		.global	cy_meta_configecc
+  23              		.section	.cyconfigecc,"a",%progbits
+  24              		.align	2
+  25              		.type	cy_meta_configecc, %object
+  26              		.size	cy_meta_configecc, 836
+  27              	cy_meta_configecc:
+  28 0000 02       		.byte	2
+  29 0001 52       		.byte	82
+  30 0002 00       		.byte	0
+  31 0003 40       		.byte	64
+  32 0004 03       		.byte	3
+  33 0005 65       		.byte	101
+  34 0006 00       		.byte	0
+  35 0007 40       		.byte	64
+  36 0008 04       		.byte	4
+  37 0009 06       		.byte	6
+  38 000a 01       		.byte	1
+  39 000b 40       		.byte	64
+  40 000c 01       		.byte	1
+  41 000d 07       		.byte	7
+  42 000e 01       		.byte	1
+  43 000f 40       		.byte	64
+  44 0010 01       		.byte	1
+  45 0011 15       		.byte	21
+  46 0012 01       		.byte	1
+  47 0013 40       		.byte	64
+  48 0014 01       		.byte	1
+  49 0015 17       		.byte	23
+  50 0016 01       		.byte	1
+  51 0017 40       		.byte	64
+  52 0018 6E       		.byte	110
+  53 0019 18       		.byte	24
+  54 001a 01       		.byte	1
+  55 001b 40       		.byte	64
+  56 001c 3F       		.byte	63
+  57 001d 19       		.byte	25
+ARM GAS  C:\Users\Digi-Key\AppData\Local\Temp\ccPbXRUv.s 			page 2
+
+
+  58 001e 01       		.byte	1
+  59 001f 40       		.byte	64
+  60 0020 18       		.byte	24
+  61 0021 1A       		.byte	26
+  62 0022 01       		.byte	1
+  63 0023 40       		.byte	64
+  64 0024 44       		.byte	68
+  65 0025 1B       		.byte	27
+  66 0026 01       		.byte	1
+  67 0027 40       		.byte	64
+  68 0028 02       		.byte	2
+  69 0029 44       		.byte	68
+  70 002a 01       		.byte	1
+  71 002b 40       		.byte	64
+  72 002c 01       		.byte	1
+  73 002d 45       		.byte	69
+  74 002e 01       		.byte	1
+  75 002f 40       		.byte	64
+  76 0030 03       		.byte	3
+  77 0031 46       		.byte	70
+  78 0032 01       		.byte	1
+  79 0033 40       		.byte	64
+  80 0034 02       		.byte	2
+  81 0035 47       		.byte	71
+  82 0036 01       		.byte	1
+  83 0037 40       		.byte	64
+  84 0038 02       		.byte	2
+  85 0039 48       		.byte	72
+  86 003a 01       		.byte	1
+  87 003b 40       		.byte	64
+  88 003c 01       		.byte	1
+  89 003d 49       		.byte	73
+  90 003e 01       		.byte	1
+  91 003f 40       		.byte	64
+  92 0040 03       		.byte	3
+  93 0041 4C       		.byte	76
+  94 0042 01       		.byte	1
+  95 0043 40       		.byte	64
+  96 0044 0B       		.byte	11
+  97 0045 4D       		.byte	77
+  98 0046 01       		.byte	1
+  99 0047 40       		.byte	64
+ 100 0048 02       		.byte	2
+ 101 0049 50       		.byte	80
+ 102 004a 01       		.byte	1
+ 103 004b 40       		.byte	64
+ 104 004c 61       		.byte	97
+ 105 004d 80       		.byte	-128
+ 106 004e 64       		.byte	100
+ 107 004f 40       		.byte	64
+ 108 0050 88       		.byte	-120
+ 109 0051 0F       		.byte	15
+ 110 0052 8A       		.byte	-118
+ 111 0053 72       		.byte	114
+ 112 0054 8B       		.byte	-117
+ 113 0055 38       		.byte	56
+ 114 0056 B9       		.byte	-71
+ARM GAS  C:\Users\Digi-Key\AppData\Local\Temp\ccPbXRUv.s 			page 3
+
+
+ 115 0057 80       		.byte	-128
+ 116 0058 BF       		.byte	-65
+ 117 0059 40       		.byte	64
+ 118 005a D9       		.byte	-39
+ 119 005b 04       		.byte	4
+ 120 005c DF       		.byte	-33
+ 121 005d 01       		.byte	1
+ 122 005e 20       		.byte	32
+ 123 005f 02       		.byte	2
+ 124 0060 EC       		.byte	-20
+ 125 0061 10       		.byte	16
+ 126 0062 B0       		.byte	-80
+ 127 0063 01       		.byte	1
+ 128 0064 00       		.byte	0
+ 129 0065 0C       		.byte	12
+ 130 0066 01       		.byte	1
+ 131 0067 80       		.byte	-128
+ 132 0068 02       		.byte	2
+ 133 0069 71       		.byte	113
+ 134 006a 05       		.byte	5
+ 135 006b 53       		.byte	83
+ 136 006c 06       		.byte	6
+ 137 006d 20       		.byte	32
+ 138 006e 07       		.byte	7
+ 139 006f 0C       		.byte	12
+ 140 0070 09       		.byte	9
+ 141 0071 03       		.byte	3
+ 142 0072 0B       		.byte	11
+ 143 0073 44       		.byte	68
+ 144 0074 10       		.byte	16
+ 145 0075 DC       		.byte	-36
+ 146 0076 12       		.byte	18
+ 147 0077 22       		.byte	34
+ 148 0078 16       		.byte	22
+ 149 0079 03       		.byte	3
+ 150 007a 18       		.byte	24
+ 151 007b 14       		.byte	20
+ 152 007c 19       		.byte	25
+ 153 007d 20       		.byte	32
+ 154 007e 1B       		.byte	27
+ 155 007f 45       		.byte	69
+ 156 0080 1C       		.byte	28
+ 157 0081 09       		.byte	9
+ 158 0082 1E       		.byte	30
+ 159 0083 D0       		.byte	-48
+ 160 0084 1F       		.byte	31
+ 161 0085 08       		.byte	8
+ 162 0086 21       		.byte	33
+ 163 0087 53       		.byte	83
+ 164 0088 23       		.byte	35
+ 165 0089 04       		.byte	4
+ 166 008a 24       		.byte	36
+ 167 008b 10       		.byte	16
+ 168 008c 26       		.byte	38
+ 169 008d 40       		.byte	64
+ 170 008e 28       		.byte	40
+ 171 008f 10       		.byte	16
+ARM GAS  C:\Users\Digi-Key\AppData\Local\Temp\ccPbXRUv.s 			page 4
+
+
+ 172 0090 2A       		.byte	42
+ 173 0091 AC       		.byte	-84
+ 174 0092 2D       		.byte	45
+ 175 0093 0A       		.byte	10
+ 176 0094 2F       		.byte	47
+ 177 0095 54       		.byte	84
+ 178 0096 31       		.byte	49
+ 179 0097 40       		.byte	64
+ 180 0098 32       		.byte	50
+ 181 0099 1F       		.byte	31
+ 182 009a 33       		.byte	51
+ 183 009b 0F       		.byte	15
+ 184 009c 35       		.byte	53
+ 185 009d 80       		.byte	-128
+ 186 009e 36       		.byte	54
+ 187 009f E0       		.byte	-32
+ 188 00a0 37       		.byte	55
+ 189 00a1 30       		.byte	48
+ 190 00a2 39       		.byte	57
+ 191 00a3 80       		.byte	-128
+ 192 00a4 3A       		.byte	58
+ 193 00a5 80       		.byte	-128
+ 194 00a6 3B       		.byte	59
+ 195 00a7 08       		.byte	8
+ 196 00a8 3F       		.byte	63
+ 197 00a9 11       		.byte	17
+ 198 00aa 40       		.byte	64
+ 199 00ab 32       		.byte	50
+ 200 00ac 41       		.byte	65
+ 201 00ad 04       		.byte	4
+ 202 00ae 45       		.byte	69
+ 203 00af 0B       		.byte	11
+ 204 00b0 46       		.byte	70
+ 205 00b1 C0       		.byte	-64
+ 206 00b2 47       		.byte	71
+ 207 00b3 E0       		.byte	-32
+ 208 00b4 48       		.byte	72
+ 209 00b5 29       		.byte	41
+ 210 00b6 49       		.byte	73
+ 211 00b7 FF       		.byte	-1
+ 212 00b8 4A       		.byte	74
+ 213 00b9 FF       		.byte	-1
+ 214 00ba 4B       		.byte	75
+ 215 00bb FF       		.byte	-1
+ 216 00bc 4E       		.byte	78
+ 217 00bd F0       		.byte	-16
+ 218 00be 4F       		.byte	79
+ 219 00bf 44       		.byte	68
+ 220 00c0 50       		.byte	80
+ 221 00c1 0C       		.byte	12
+ 222 00c2 54       		.byte	84
+ 223 00c3 01       		.byte	1
+ 224 00c4 58       		.byte	88
+ 225 00c5 04       		.byte	4
+ 226 00c6 59       		.byte	89
+ 227 00c7 04       		.byte	4
+ 228 00c8 5A       		.byte	90
+ARM GAS  C:\Users\Digi-Key\AppData\Local\Temp\ccPbXRUv.s 			page 5
+
+
+ 229 00c9 04       		.byte	4
+ 230 00ca 5B       		.byte	91
+ 231 00cb 04       		.byte	4
+ 232 00cc 5C       		.byte	92
+ 233 00cd 11       		.byte	17
+ 234 00ce 5D       		.byte	93
+ 235 00cf 11       		.byte	17
+ 236 00d0 5F       		.byte	95
+ 237 00d1 01       		.byte	1
+ 238 00d2 66       		.byte	102
+ 239 00d3 C0       		.byte	-64
+ 240 00d4 6A       		.byte	106
+ 241 00d5 40       		.byte	64
+ 242 00d6 6B       		.byte	107
+ 243 00d7 02       		.byte	2
+ 244 00d8 80       		.byte	-128
+ 245 00d9 31       		.byte	49
+ 246 00da 82       		.byte	-126
+ 247 00db 0E       		.byte	14
+ 248 00dc 85       		.byte	-123
+ 249 00dd 0F       		.byte	15
+ 250 00de 8A       		.byte	-118
+ 251 00df 13       		.byte	19
+ 252 00e0 8C       		.byte	-116
+ 253 00e1 80       		.byte	-128
+ 254 00e2 8D       		.byte	-115
+ 255 00e3 01       		.byte	1
+ 256 00e4 8E       		.byte	-114
+ 257 00e5 40       		.byte	64
+ 258 00e6 8F       		.byte	-113
+ 259 00e7 06       		.byte	6
+ 260 00e8 90       		.byte	-112
+ 261 00e9 2C       		.byte	44
+ 262 00ea 91       		.byte	-111
+ 263 00eb 02       		.byte	2
+ 264 00ec 92       		.byte	-110
+ 265 00ed 03       		.byte	3
+ 266 00ee 93       		.byte	-109
+ 267 00ef 01       		.byte	1
+ 268 00f0 94       		.byte	-108
+ 269 00f1 C0       		.byte	-64
+ 270 00f2 99       		.byte	-103
+ 271 00f3 0F       		.byte	15
+ 272 00f4 9A       		.byte	-102
+ 273 00f5 08       		.byte	8
+ 274 00f6 9D       		.byte	-99
+ 275 00f7 08       		.byte	8
+ 276 00f8 A2       		.byte	-94
+ 277 00f9 0C       		.byte	12
+ 278 00fa A4       		.byte	-92
+ 279 00fb 31       		.byte	49
+ 280 00fc A6       		.byte	-90
+ 281 00fd 06       		.byte	6
+ 282 00fe A8       		.byte	-88
+ 283 00ff C0       		.byte	-64
+ 284 0100 AC       		.byte	-84
+ 285 0101 40       		.byte	64
+ARM GAS  C:\Users\Digi-Key\AppData\Local\Temp\ccPbXRUv.s 			page 6
+
+
+ 286 0102 AD       		.byte	-83
+ 287 0103 04       		.byte	4
+ 288 0104 AE       		.byte	-82
+ 289 0105 80       		.byte	-128
+ 290 0106 AF       		.byte	-81
+ 291 0107 01       		.byte	1
+ 292 0108 B0       		.byte	-80
+ 293 0109 0F       		.byte	15
+ 294 010a B1       		.byte	-79
+ 295 010b 07       		.byte	7
+ 296 010c B3       		.byte	-77
+ 297 010d 08       		.byte	8
+ 298 010e B4       		.byte	-76
+ 299 010f 30       		.byte	48
+ 300 0110 B6       		.byte	-74
+ 301 0111 C0       		.byte	-64
+ 302 0112 B8       		.byte	-72
+ 303 0113 20       		.byte	32
+ 304 0114 BA       		.byte	-70
+ 305 0115 02       		.byte	2
+ 306 0116 BE       		.byte	-66
+ 307 0117 10       		.byte	16
+ 308 0118 C0       		.byte	-64
+ 309 0119 02       		.byte	2
+ 310 011a C7       		.byte	-57
+ 311 011b 04       		.byte	4
+ 312 011c C9       		.byte	-55
+ 313 011d FF       		.byte	-1
+ 314 011e CA       		.byte	-54
+ 315 011f 07       		.byte	7
+ 316 0120 CB       		.byte	-53
+ 317 0121 FF       		.byte	-1
+ 318 0122 CC       		.byte	-52
+ 319 0123 40       		.byte	64
+ 320 0124 CD       		.byte	-51
+ 321 0125 20       		.byte	32
+ 322 0126 CE       		.byte	-50
+ 323 0127 F0       		.byte	-16
+ 324 0128 CF       		.byte	-49
+ 325 0129 05       		.byte	5
+ 326 012a D0       		.byte	-48
+ 327 012b 08       		.byte	8
+ 328 012c D8       		.byte	-40
+ 329 012d 04       		.byte	4
+ 330 012e D9       		.byte	-39
+ 331 012f 04       		.byte	4
+ 332 0130 DA       		.byte	-38
+ 333 0131 04       		.byte	4
+ 334 0132 DC       		.byte	-36
+ 335 0133 11       		.byte	17
+ 336 0134 DD       		.byte	-35
+ 337 0135 01       		.byte	1
+ 338 0136 DF       		.byte	-33
+ 339 0137 01       		.byte	1
+ 340 0138 E0       		.byte	-32
+ 341 0139 40       		.byte	64
+ 342 013a E1       		.byte	-31
+ARM GAS  C:\Users\Digi-Key\AppData\Local\Temp\ccPbXRUv.s 			page 7
+
+
+ 343 013b A8       		.byte	-88
+ 344 013c E2       		.byte	-30
+ 345 013d 40       		.byte	64
+ 346 013e E3       		.byte	-29
+ 347 013f 20       		.byte	32
+ 348 0140 00       		.byte	0
+ 349 0141 20       		.byte	32
+ 350 0142 01       		.byte	1
+ 351 0143 80       		.byte	-128
+ 352 0144 02       		.byte	2
+ 353 0145 40       		.byte	64
+ 354 0146 03       		.byte	3
+ 355 0147 80       		.byte	-128
+ 356 0148 06       		.byte	6
+ 357 0149 40       		.byte	64
+ 358 014a 07       		.byte	7
+ 359 014b 20       		.byte	32
+ 360 014c 0A       		.byte	10
+ 361 014d 60       		.byte	96
+ 362 014e 0B       		.byte	11
+ 363 014f 08       		.byte	8
+ 364 0150 0C       		.byte	12
+ 365 0151 04       		.byte	4
+ 366 0152 0D       		.byte	13
+ 367 0153 80       		.byte	-128
+ 368 0154 0E       		.byte	14
+ 369 0155 60       		.byte	96
+ 370 0156 0F       		.byte	15
+ 371 0157 08       		.byte	8
+ 372 0158 10       		.byte	16
+ 373 0159 02       		.byte	2
+ 374 015a 11       		.byte	17
+ 375 015b 08       		.byte	8
+ 376 015c 12       		.byte	18
+ 377 015d 84       		.byte	-124
+ 378 015e 15       		.byte	21
+ 379 015f 08       		.byte	8
+ 380 0160 17       		.byte	23
+ 381 0161 10       		.byte	16
+ 382 0162 18       		.byte	24
+ 383 0163 04       		.byte	4
+ 384 0164 19       		.byte	25
+ 385 0165 80       		.byte	-128
+ 386 0166 1A       		.byte	26
+ 387 0167 40       		.byte	64
+ 388 0168 1E       		.byte	30
+ 389 0169 20       		.byte	32
+ 390 016a 1F       		.byte	31
+ 391 016b 80       		.byte	-128
+ 392 016c 21       		.byte	33
+ 393 016d 08       		.byte	8
+ 394 016e 23       		.byte	35
+ 395 016f 40       		.byte	64
+ 396 0170 25       		.byte	37
+ 397 0171 84       		.byte	-124
+ 398 0172 26       		.byte	38
+ 399 0173 80       		.byte	-128
+ARM GAS  C:\Users\Digi-Key\AppData\Local\Temp\ccPbXRUv.s 			page 8
+
+
+ 400 0174 27       		.byte	39
+ 401 0175 98       		.byte	-104
+ 402 0176 29       		.byte	41
+ 403 0177 80       		.byte	-128
+ 404 0178 2E       		.byte	46
+ 405 0179 40       		.byte	64
+ 406 017a 2F       		.byte	47
+ 407 017b 80       		.byte	-128
+ 408 017c 30       		.byte	48
+ 409 017d 02       		.byte	2
+ 410 017e 32       		.byte	50
+ 411 017f 50       		.byte	80
+ 412 0180 36       		.byte	54
+ 413 0181 A0       		.byte	-96
+ 414 0182 37       		.byte	55
+ 415 0183 20       		.byte	32
+ 416 0184 39       		.byte	57
+ 417 0185 04       		.byte	4
+ 418 0186 3A       		.byte	58
+ 419 0187 04       		.byte	4
+ 420 0188 3B       		.byte	59
+ 421 0189 40       		.byte	64
+ 422 018a 3D       		.byte	61
+ 423 018b 09       		.byte	9
+ 424 018c 3E       		.byte	62
+ 425 018d 12       		.byte	18
+ 426 018e 3F       		.byte	63
+ 427 018f 20       		.byte	32
+ 428 0190 40       		.byte	64
+ 429 0191 04       		.byte	4
+ 430 0192 45       		.byte	69
+ 431 0193 04       		.byte	4
+ 432 0194 46       		.byte	70
+ 433 0195 40       		.byte	64
+ 434 0196 47       		.byte	71
+ 435 0197 20       		.byte	32
+ 436 0198 48       		.byte	72
+ 437 0199 10       		.byte	16
+ 438 019a 4A       		.byte	74
+ 439 019b 20       		.byte	32
+ 440 019c 4F       		.byte	79
+ 441 019d 08       		.byte	8
+ 442 019e 51       		.byte	81
+ 443 019f 04       		.byte	4
+ 444 01a0 53       		.byte	83
+ 445 01a1 04       		.byte	4
+ 446 01a2 56       		.byte	86
+ 447 01a3 02       		.byte	2
+ 448 01a4 57       		.byte	87
+ 449 01a5 10       		.byte	16
+ 450 01a6 5D       		.byte	93
+ 451 01a7 01       		.byte	1
+ 452 01a8 5E       		.byte	94
+ 453 01a9 10       		.byte	16
+ 454 01aa 5F       		.byte	95
+ 455 01ab 88       		.byte	-120
+ 456 01ac C0       		.byte	-64
+ARM GAS  C:\Users\Digi-Key\AppData\Local\Temp\ccPbXRUv.s 			page 9
+
+
+ 457 01ad 3B       		.byte	59
+ 458 01ae C2       		.byte	-62
+ 459 01af FE       		.byte	-2
+ 460 01b0 C4       		.byte	-60
+ 461 01b1 6F       		.byte	111
+ 462 01b2 CA       		.byte	-54
+ 463 01b3 98       		.byte	-104
+ 464 01b4 CC       		.byte	-52
+ 465 01b5 3D       		.byte	61
+ 466 01b6 CE       		.byte	-50
+ 467 01b7 EA       		.byte	-22
+ 468 01b8 D0       		.byte	-48
+ 469 01b9 E4       		.byte	-28
+ 470 01ba D6       		.byte	-42
+ 471 01bb F0       		.byte	-16
+ 472 01bc E8       		.byte	-24
+ 473 01bd 80       		.byte	-128
+ 474 01be 82       		.byte	-126
+ 475 01bf 04       		.byte	4
+ 476 01c0 84       		.byte	-124
+ 477 01c1 01       		.byte	1
+ 478 01c2 88       		.byte	-120
+ 479 01c3 01       		.byte	1
+ 480 01c4 8E       		.byte	-114
+ 481 01c5 02       		.byte	2
+ 482 01c6 92       		.byte	-110
+ 483 01c7 02       		.byte	2
+ 484 01c8 96       		.byte	-106
+ 485 01c9 01       		.byte	1
+ 486 01ca 9A       		.byte	-102
+ 487 01cb 04       		.byte	4
+ 488 01cc A8       		.byte	-88
+ 489 01cd 08       		.byte	8
+ 490 01ce AE       		.byte	-82
+ 491 01cf 01       		.byte	1
+ 492 01d0 AF       		.byte	-81
+ 493 01d1 01       		.byte	1
+ 494 01d2 B0       		.byte	-80
+ 495 01d3 01       		.byte	1
+ 496 01d4 B2       		.byte	-78
+ 497 01d5 02       		.byte	2
+ 498 01d6 B4       		.byte	-76
+ 499 01d7 08       		.byte	8
+ 500 01d8 B6       		.byte	-74
+ 501 01d9 04       		.byte	4
+ 502 01da B7       		.byte	-73
+ 503 01db 01       		.byte	1
+ 504 01dc B8       		.byte	-72
+ 505 01dd 02       		.byte	2
+ 506 01de BE       		.byte	-66
+ 507 01df 54       		.byte	84
+ 508 01e0 D4       		.byte	-44
+ 509 01e1 18       		.byte	24
+ 510 01e2 D8       		.byte	-40
+ 511 01e3 04       		.byte	4
+ 512 01e4 D9       		.byte	-39
+ 513 01e5 04       		.byte	4
+ARM GAS  C:\Users\Digi-Key\AppData\Local\Temp\ccPbXRUv.s 			page 10
+
+
+ 514 01e6 DB       		.byte	-37
+ 515 01e7 04       		.byte	4
+ 516 01e8 DC       		.byte	-36
+ 517 01e9 11       		.byte	17
+ 518 01ea DD       		.byte	-35
+ 519 01eb 10       		.byte	16
+ 520 01ec DF       		.byte	-33
+ 521 01ed 01       		.byte	1
+ 522 01ee 00       		.byte	0
+ 523 01ef 24       		.byte	36
+ 524 01f0 01       		.byte	1
+ 525 01f1 80       		.byte	-128
+ 526 01f2 04       		.byte	4
+ 527 01f3 80       		.byte	-128
+ 528 01f4 05       		.byte	5
+ 529 01f5 22       		.byte	34
+ 530 01f6 07       		.byte	7
+ 531 01f7 20       		.byte	32
+ 532 01f8 08       		.byte	8
+ 533 01f9 20       		.byte	32
+ 534 01fa 0A       		.byte	10
+ 535 01fb 12       		.byte	18
+ 536 01fc 0B       		.byte	11
+ 537 01fd 40       		.byte	64
+ 538 01fe 0E       		.byte	14
+ 539 01ff 50       		.byte	80
+ 540 0200 0F       		.byte	15
+ 541 0201 04       		.byte	4
+ 542 0202 10       		.byte	16
+ 543 0203 C2       		.byte	-62
+ 544 0204 13       		.byte	19
+ 545 0205 18       		.byte	24
+ 546 0206 14       		.byte	20
+ 547 0207 04       		.byte	4
+ 548 0208 17       		.byte	23
+ 549 0209 80       		.byte	-128
+ 550 020a 18       		.byte	24
+ 551 020b 05       		.byte	5
+ 552 020c 19       		.byte	25
+ 553 020d 25       		.byte	37
+ 554 020e 1A       		.byte	26
+ 555 020f 10       		.byte	16
+ 556 0210 1C       		.byte	28
+ 557 0211 08       		.byte	8
+ 558 0212 1D       		.byte	29
+ 559 0213 40       		.byte	64
+ 560 0214 1E       		.byte	30
+ 561 0215 40       		.byte	64
+ 562 0216 1F       		.byte	31
+ 563 0217 04       		.byte	4
+ 564 0218 20       		.byte	32
+ 565 0219 20       		.byte	32
+ 566 021a 22       		.byte	34
+ 567 021b 09       		.byte	9
+ 568 021c 23       		.byte	35
+ 569 021d A5       		.byte	-91
+ 570 021e 25       		.byte	37
+ARM GAS  C:\Users\Digi-Key\AppData\Local\Temp\ccPbXRUv.s 			page 11
+
+
+ 571 021f 80       		.byte	-128
+ 572 0220 28       		.byte	40
+ 573 0221 60       		.byte	96
+ 574 0222 29       		.byte	41
+ 575 0223 A0       		.byte	-96
+ 576 0224 2C       		.byte	44
+ 577 0225 02       		.byte	2
+ 578 0226 31       		.byte	49
+ 579 0227 94       		.byte	-108
+ 580 0228 32       		.byte	50
+ 581 0229 01       		.byte	1
+ 582 022a 38       		.byte	56
+ 583 022b 28       		.byte	40
+ 584 022c 3A       		.byte	58
+ 585 022d 01       		.byte	1
+ 586 022e 3B       		.byte	59
+ 587 022f 40       		.byte	64
+ 588 0230 40       		.byte	64
+ 589 0231 25       		.byte	37
+ 590 0232 41       		.byte	65
+ 591 0233 08       		.byte	8
+ 592 0234 49       		.byte	73
+ 593 0235 12       		.byte	18
+ 594 0236 4A       		.byte	74
+ 595 0237 0A       		.byte	10
+ 596 0238 50       		.byte	80
+ 597 0239 40       		.byte	64
+ 598 023a 59       		.byte	89
+ 599 023b 01       		.byte	1
+ 600 023c 5F       		.byte	95
+ 601 023d 01       		.byte	1
+ 602 023e 65       		.byte	101
+ 603 023f 40       		.byte	64
+ 604 0240 67       		.byte	103
+ 605 0241 08       		.byte	8
+ 606 0242 69       		.byte	105
+ 607 0243 04       		.byte	4
+ 608 0244 6A       		.byte	106
+ 609 0245 A0       		.byte	-96
+ 610 0246 70       		.byte	112
+ 611 0247 94       		.byte	-108
+ 612 0248 73       		.byte	115
+ 613 0249 18       		.byte	24
+ 614 024a 86       		.byte	-122
+ 615 024b 02       		.byte	2
+ 616 024c 87       		.byte	-121
+ 617 024d 04       		.byte	4
+ 618 024e 88       		.byte	-120
+ 619 024f 06       		.byte	6
+ 620 0250 8E       		.byte	-114
+ 621 0251 01       		.byte	1
+ 622 0252 93       		.byte	-109
+ 623 0253 40       		.byte	64
+ 624 0254 95       		.byte	-107
+ 625 0255 04       		.byte	4
+ 626 0256 96       		.byte	-106
+ 627 0257 A0       		.byte	-96
+ARM GAS  C:\Users\Digi-Key\AppData\Local\Temp\ccPbXRUv.s 			page 12
+
+
+ 628 0258 98       		.byte	-104
+ 629 0259 04       		.byte	4
+ 630 025a 99       		.byte	-103
+ 631 025b 80       		.byte	-128
+ 632 025c A1       		.byte	-95
+ 633 025d 08       		.byte	8
+ 634 025e A4       		.byte	-92
+ 635 025f 02       		.byte	2
+ 636 0260 C0       		.byte	-64
+ 637 0261 F7       		.byte	-9
+ 638 0262 C2       		.byte	-62
+ 639 0263 7F       		.byte	127
+ 640 0264 C4       		.byte	-60
+ 641 0265 CF       		.byte	-49
+ 642 0266 CA       		.byte	-54
+ 643 0267 1F       		.byte	31
+ 644 0268 CC       		.byte	-52
+ 645 0269 0F       		.byte	15
+ 646 026a CE       		.byte	-50
+ 647 026b 0F       		.byte	15
+ 648 026c D0       		.byte	-48
+ 649 026d 0E       		.byte	14
+ 650 026e D2       		.byte	-46
+ 651 026f 0C       		.byte	12
+ 652 0270 D6       		.byte	-42
+ 653 0271 81       		.byte	-127
+ 654 0272 D8       		.byte	-40
+ 655 0273 30       		.byte	48
+ 656 0274 EC       		.byte	-20
+ 657 0275 10       		.byte	16
+ 658 0276 7C       		.byte	124
+ 659 0277 20       		.byte	32
+ 660 0278 DE       		.byte	-34
+ 661 0279 01       		.byte	1
+ 662 027a 9C       		.byte	-100
+ 663 027b 20       		.byte	32
+ 664 027c 45       		.byte	69
+ 665 027d 08       		.byte	8
+ 666 027e 9C       		.byte	-100
+ 667 027f 20       		.byte	32
+ 668 0280 D0       		.byte	-48
+ 669 0281 01       		.byte	1
+ 670 0282 9C       		.byte	-100
+ 671 0283 20       		.byte	32
+ 672 0284 A5       		.byte	-91
+ 673 0285 08       		.byte	8
+ 674 0286 25       		.byte	37
+ 675 0287 10       		.byte	16
+ 676 0288 C8       		.byte	-56
+ 677 0289 20       		.byte	32
+ 678 028a B5       		.byte	-75
+ 679 028b 10       		.byte	16
+ 680 028c A5       		.byte	-91
+ 681 028d 08       		.byte	8
+ 682 028e B0       		.byte	-80
+ 683 028f 20       		.byte	32
+ 684 0290 E8       		.byte	-24
+ARM GAS  C:\Users\Digi-Key\AppData\Local\Temp\ccPbXRUv.s 			page 13
+
+
+ 685 0291 01       		.byte	1
+ 686 0292 10       		.byte	16
+ 687 0293 80       		.byte	-128
+ 688 0294 73       		.byte	115
+ 689 0295 40       		.byte	64
+ 690 0296 88       		.byte	-120
+ 691 0297 80       		.byte	-128
+ 692 0298 8B       		.byte	-117
+ 693 0299 40       		.byte	64
+ 694 029a 8C       		.byte	-116
+ 695 029b 80       		.byte	-128
+ 696 029c B5       		.byte	-75
+ 697 029d 08       		.byte	8
+ 698 029e C4       		.byte	-60
+ 699 029f 08       		.byte	8
+ 700 02a0 DC       		.byte	-36
+ 701 02a1 01       		.byte	1
+ 702 02a2 E0       		.byte	-32
+ 703 02a3 04       		.byte	4
+ 704 02a4 E6       		.byte	-26
+ 705 02a5 03       		.byte	3
+ 706 02a6 EC       		.byte	-20
+ 707 02a7 08       		.byte	8
+ 708 02a8 10       		.byte	16
+ 709 02a9 02       		.byte	2
+ 710 02aa 1C       		.byte	28
+ 711 02ab 02       		.byte	2
+ 712 02ac 00       		.byte	0
+ 713 02ad 44       		.byte	68
+ 714 02ae 00       		.byte	0
+ 715 02af 00       		.byte	0
+ 716 02b0 33       		.byte	51
+ 717 02b1 18       		.byte	24
+ 718 02b2 0C       		.byte	12
+ 719 02b3 00       		.byte	0
+ 720 02b4 3F       		.byte	63
+ 721 02b5 08       		.byte	8
+ 722 02b6 00       		.byte	0
+ 723 02b7 00       		.byte	0
+ 724 02b8 02       		.byte	2
+ 725 02b9 C0       		.byte	-64
+ 726 02ba 80       		.byte	-128
+ 727 02bb 00       		.byte	0
+ 728 02bc 03       		.byte	3
+ 729 02bd 3C       		.byte	60
+ 730 02be 40       		.byte	64
+ 731 02bf C2       		.byte	-62
+ 732 02c0 1F       		.byte	31
+ 733 02c1 1C       		.byte	28
+ 734 02c2 20       		.byte	32
+ 735 02c3 E1       		.byte	-31
+ 736 02c4 00       		.byte	0
+ 737 02c5 FF       		.byte	-1
+ 738 02c6 23       		.byte	35
+ 739 02c7 00       		.byte	0
+ 740 02c8 1C       		.byte	28
+ 741 02c9 00       		.byte	0
+ARM GAS  C:\Users\Digi-Key\AppData\Local\Temp\ccPbXRUv.s 			page 14
+
+
+ 742 02ca 23       		.byte	35
+ 743 02cb 04       		.byte	4
+ 744 02cc 08       		.byte	8
+ 745 02cd 10       		.byte	16
+ 746 02ce 00       		.byte	0
+ 747 02cf 00       		.byte	0
+ 748 02d0 04       		.byte	4
+ 749 02d1 00       		.byte	0
+ 750 02d2 00       		.byte	0
+ 751 02d3 E3       		.byte	-29
+ 752 02d4 0C       		.byte	12
+ 753 02d5 E7       		.byte	-25
+ 754 02d6 00       		.byte	0
+ 755 02d7 18       		.byte	24
+ 756 02d8 01       		.byte	1
+ 757 02d9 80       		.byte	-128
+ 758 02da 80       		.byte	-128
+ 759 02db 00       		.byte	0
+ 760 02dc 10       		.byte	16
+ 761 02dd 1F       		.byte	31
+ 762 02de 2C       		.byte	44
+ 763 02df 00       		.byte	0
+ 764 02e0 0F       		.byte	15
+ 765 02e1 38       		.byte	56
+ 766 02e2 C0       		.byte	-64
+ 767 02e3 C0       		.byte	-64
+ 768 02e4 00       		.byte	0
+ 769 02e5 00       		.byte	0
+ 770 02e6 28       		.byte	40
+ 771 02e7 0A       		.byte	10
+ 772 02e8 00       		.byte	0
+ 773 02e9 00       		.byte	0
+ 774 02ea 41       		.byte	65
+ 775 02eb 00       		.byte	0
+ 776 02ec 23       		.byte	35
+ 777 02ed 06       		.byte	6
+ 778 02ee 05       		.byte	5
+ 779 02ef 00       		.byte	0
+ 780 02f0 01       		.byte	1
+ 781 02f1 C0       		.byte	-64
+ 782 02f2 0E       		.byte	14
+ 783 02f3 00       		.byte	0
+ 784 02f4 06       		.byte	6
+ 785 02f5 FF       		.byte	-1
+ 786 02f6 FF       		.byte	-1
+ 787 02f7 FF       		.byte	-1
+ 788 02f8 62       		.byte	98
+ 789 02f9 A0       		.byte	-96
+ 790 02fa F0       		.byte	-16
+ 791 02fb 41       		.byte	65
+ 792 02fc 0C       		.byte	12
+ 793 02fd 00       		.byte	0
+ 794 02fe 00       		.byte	0
+ 795 02ff 00       		.byte	0
+ 796 0300 00       		.byte	0
+ 797 0301 00       		.byte	0
+ 798 0302 02       		.byte	2
+ARM GAS  C:\Users\Digi-Key\AppData\Local\Temp\ccPbXRUv.s 			page 15
+
+
+ 799 0303 13       		.byte	19
+ 800 0304 04       		.byte	4
+ 801 0305 04       		.byte	4
+ 802 0306 04       		.byte	4
+ 803 0307 04       		.byte	4
+ 804 0308 11       		.byte	17
+ 805 0309 11       		.byte	17
+ 806 030a 00       		.byte	0
+ 807 030b 01       		.byte	1
+ 808 030c 00       		.byte	0
+ 809 030d 00       		.byte	0
+ 810 030e 00       		.byte	0
+ 811 030f 00       		.byte	0
+ 812 0310 00       		.byte	0
+ 813 0311 00       		.byte	0
+ 814 0312 40       		.byte	64
+ 815 0313 02       		.byte	2
+ 816 0314 00       		.byte	0
+ 817 0315 10       		.byte	16
+ 818 0316 30       		.byte	48
+ 819 0317 10       		.byte	16
+ 820 0318 00       		.byte	0
+ 821 0319 10       		.byte	16
+ 822 031a 10       		.byte	16
+ 823 031b 12       		.byte	18
+ 824 031c 00       		.byte	0
+ 825 031d 00       		.byte	0
+ 826 031e 00       		.byte	0
+ 827 031f 00       		.byte	0
+ 828 0320 00       		.byte	0
+ 829 0321 00       		.byte	0
+ 830 0322 00       		.byte	0
+ 831 0323 00       		.byte	0
+ 832 0324 00       		.byte	0
+ 833 0325 00       		.byte	0
+ 834 0326 00       		.byte	0
+ 835 0327 00       		.byte	0
+ 836 0328 00       		.byte	0
+ 837 0329 00       		.byte	0
+ 838 032a 00       		.byte	0
+ 839 032b 00       		.byte	0
+ 840 032c 00       		.byte	0
+ 841 032d 00       		.byte	0
+ 842 032e 00       		.byte	0
+ 843 032f 00       		.byte	0
+ 844 0330 00       		.byte	0
+ 845 0331 00       		.byte	0
+ 846 0332 12       		.byte	18
+ 847 0333 00       		.byte	0
+ 848 0334 80       		.byte	-128
+ 849 0335 00       		.byte	0
+ 850 0336 40       		.byte	64
+ 851 0337 80       		.byte	-128
+ 852 0338 80       		.byte	-128
+ 853 0339 00       		.byte	0
+ 854 033a 80       		.byte	-128
+ 855 033b 00       		.byte	0
+ARM GAS  C:\Users\Digi-Key\AppData\Local\Temp\ccPbXRUv.s 			page 16
+
+
+ 856 033c 00       		.byte	0
+ 857 033d 00       		.byte	0
+ 858 033e 00       		.byte	0
+ 859 033f 00       		.byte	0
+ 860 0340 25       		.byte	37
+ 861 0341 00       		.byte	0
+ 862 0342 18       		.byte	24
+ 863 0343 01       		.byte	1
+ 864              		.section	.cywolatch,"a",%progbits
+ 865              		.align	2
+ 866              		.type	cy_meta_wonvl, %object
+ 867              		.size	cy_meta_wonvl, 4
+ 868              	cy_meta_wonvl:
+ 869 0000 BC       		.byte	-68
+ 870 0001 90       		.byte	-112
+ 871 0002 AC       		.byte	-84
+ 872 0003 AF       		.byte	-81
+ 873              		.section	.cycustnvl,"a",%progbits
+ 874              		.align	2
+ 875              		.type	cy_meta_custnvl, %object
+ 876              		.size	cy_meta_custnvl, 4
+ 877              	cy_meta_custnvl:
+ 878 0000 00       		.byte	0
+ 879 0001 00       		.byte	0
+ 880 0002 40       		.byte	64
+ 881 0003 05       		.byte	5
+ 882              		.section	.cymeta,"a",%progbits
+ 883              		.align	2
+ 884              		.type	cy_metadata, %object
+ 885              		.size	cy_metadata, 12
+ 886              	cy_metadata:
+ 887 0000 00       		.byte	0
+ 888 0001 01       		.byte	1
+ 889 0002 2E       		.byte	46
+ 890 0003 16       		.byte	22
+ 891 0004 10       		.byte	16
+ 892 0005 69       		.byte	105
+ 893 0006 00       		.byte	0
+ 894 0007 01       		.byte	1
+ 895 0008 00       		.byte	0
+ 896 0009 00       		.byte	0
+ 897 000a 00       		.byte	0
+ 898 000b 00       		.byte	0
+ 899              		.section	.cyflashprotect,"a",%progbits
+ 900              		.align	2
+ 901              		.type	cy_meta_flashprotect, %object
+ 902              		.size	cy_meta_flashprotect, 256
+ 903              	cy_meta_flashprotect:
+ 904 0000 00000000 		.space	256
+ 904      00000000 
+ 904      00000000 
+ 904      00000000 
+ 904      00000000 
+ 905              		.text
+ 906              	.Letext0:
+ 907              		.file 1 ".\\Generated_Source\\PSoC5\\cymetadata.c"
+ 908              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
+ARM GAS  C:\Users\Digi-Key\AppData\Local\Temp\ccPbXRUv.s 			page 17
+
+
+ 909              		.section	.debug_info,"",%progbits
+ 910              	.Ldebug_info0:
+ 911 0000 36010000 		.4byte	0x136
+ 912 0004 0400     		.2byte	0x4
+ 913 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 914 000a 04       		.byte	0x4
+ 915 000b 01       		.uleb128 0x1
+ 916 000c 94000000 		.4byte	.LASF18
+ 917 0010 01       		.byte	0x1
+ 918 0011 00000000 		.4byte	.LASF19
+ 919 0015 5B010000 		.4byte	.LASF20
+ 920 0019 00000000 		.4byte	.Ldebug_line0
+ 921 001d 02       		.uleb128 0x2
+ 922 001e 01       		.byte	0x1
+ 923 001f 06       		.byte	0x6
+ 924 0020 E2010000 		.4byte	.LASF0
+ 925 0024 02       		.uleb128 0x2
+ 926 0025 01       		.byte	0x1
+ 927 0026 08       		.byte	0x8
+ 928 0027 38000000 		.4byte	.LASF1
+ 929 002b 02       		.uleb128 0x2
+ 930 002c 02       		.byte	0x2
+ 931 002d 05       		.byte	0x5
+ 932 002e C9010000 		.4byte	.LASF2
+ 933 0032 02       		.uleb128 0x2
+ 934 0033 02       		.byte	0x2
+ 935 0034 07       		.byte	0x7
+ 936 0035 58000000 		.4byte	.LASF3
+ 937 0039 02       		.uleb128 0x2
+ 938 003a 04       		.byte	0x4
+ 939 003b 05       		.byte	0x5
+ 940 003c D9010000 		.4byte	.LASF4
+ 941 0040 02       		.uleb128 0x2
+ 942 0041 04       		.byte	0x4
+ 943 0042 07       		.byte	0x7
+ 944 0043 46000000 		.4byte	.LASF5
+ 945 0047 02       		.uleb128 0x2
+ 946 0048 08       		.byte	0x8
+ 947 0049 05       		.byte	0x5
+ 948 004a B6010000 		.4byte	.LASF6
+ 949 004e 02       		.uleb128 0x2
+ 950 004f 08       		.byte	0x8
+ 951 0050 07       		.byte	0x7
+ 952 0051 2F010000 		.4byte	.LASF7
+ 953 0055 03       		.uleb128 0x3
+ 954 0056 04       		.byte	0x4
+ 955 0057 05       		.byte	0x5
+ 956 0058 696E7400 		.ascii	"int\000"
+ 957 005c 02       		.uleb128 0x2
+ 958 005d 04       		.byte	0x4
+ 959 005e 07       		.byte	0x7
+ 960 005f 22010000 		.4byte	.LASF8
+ 961 0063 04       		.uleb128 0x4
+ 962 0064 D3010000 		.4byte	.LASF21
+ 963 0068 02       		.byte	0x2
+ 964 0069 C2       		.byte	0xc2
+ 965 006a 24000000 		.4byte	0x24
+ARM GAS  C:\Users\Digi-Key\AppData\Local\Temp\ccPbXRUv.s 			page 18
+
+
+ 966 006e 02       		.uleb128 0x2
+ 967 006f 04       		.byte	0x4
+ 968 0070 04       		.byte	0x4
+ 969 0071 32000000 		.4byte	.LASF9
+ 970 0075 02       		.uleb128 0x2
+ 971 0076 08       		.byte	0x8
+ 972 0077 04       		.byte	0x4
+ 973 0078 6B000000 		.4byte	.LASF10
+ 974 007c 02       		.uleb128 0x2
+ 975 007d 01       		.byte	0x1
+ 976 007e 08       		.byte	0x8
+ 977 007f C4010000 		.4byte	.LASF11
+ 978 0083 05       		.uleb128 0x5
+ 979 0084 63000000 		.4byte	0x63
+ 980 0088 94000000 		.4byte	0x94
+ 981 008c 06       		.uleb128 0x6
+ 982 008d 94000000 		.4byte	0x94
+ 983 0091 4303     		.2byte	0x343
+ 984 0093 00       		.byte	0
+ 985 0094 02       		.uleb128 0x2
+ 986 0095 04       		.byte	0x4
+ 987 0096 07       		.byte	0x7
+ 988 0097 AD010000 		.4byte	.LASF12
+ 989 009b 07       		.uleb128 0x7
+ 990 009c 82000000 		.4byte	.LASF13
+ 991 00a0 01       		.byte	0x1
+ 992 00a1 1C       		.byte	0x1c
+ 993 00a2 AC000000 		.4byte	0xac
+ 994 00a6 05       		.uleb128 0x5
+ 995 00a7 03       		.byte	0x3
+ 996 00a8 00000000 		.4byte	cy_meta_configecc
+ 997 00ac 08       		.uleb128 0x8
+ 998 00ad 83000000 		.4byte	0x83
+ 999 00b1 05       		.uleb128 0x5
+ 1000 00b2 63000000 		.4byte	0x63
+ 1001 00b6 C1000000 		.4byte	0xc1
+ 1002 00ba 09       		.uleb128 0x9
+ 1003 00bb 94000000 		.4byte	0x94
+ 1004 00bf 03       		.byte	0x3
+ 1005 00c0 00       		.byte	0
+ 1006 00c1 07       		.uleb128 0x7
+ 1007 00c2 72000000 		.4byte	.LASF14
+ 1008 00c6 01       		.byte	0x1
+ 1009 00c7 8F       		.byte	0x8f
+ 1010 00c8 D2000000 		.4byte	0xd2
+ 1011 00cc 05       		.uleb128 0x5
+ 1012 00cd 03       		.byte	0x3
+ 1013 00ce 00000000 		.4byte	cy_meta_custnvl
+ 1014 00d2 08       		.uleb128 0x8
+ 1015 00d3 B1000000 		.4byte	0xb1
+ 1016 00d7 07       		.uleb128 0x7
+ 1017 00d8 9F010000 		.4byte	.LASF15
+ 1018 00dc 01       		.byte	0x1
+ 1019 00dd 9A       		.byte	0x9a
+ 1020 00de E8000000 		.4byte	0xe8
+ 1021 00e2 05       		.uleb128 0x5
+ 1022 00e3 03       		.byte	0x3
+ARM GAS  C:\Users\Digi-Key\AppData\Local\Temp\ccPbXRUv.s 			page 19
+
+
+ 1023 00e4 00000000 		.4byte	cy_meta_wonvl
+ 1024 00e8 08       		.uleb128 0x8
+ 1025 00e9 B1000000 		.4byte	0xb1
+ 1026 00ed 05       		.uleb128 0x5
+ 1027 00ee 63000000 		.4byte	0x63
+ 1028 00f2 FD000000 		.4byte	0xfd
+ 1029 00f6 09       		.uleb128 0x9
+ 1030 00f7 94000000 		.4byte	0x94
+ 1031 00fb FF       		.byte	0xff
+ 1032 00fc 00       		.byte	0
+ 1033 00fd 07       		.uleb128 0x7
+ 1034 00fe 46010000 		.4byte	.LASF16
+ 1035 0102 01       		.byte	0x1
+ 1036 0103 A5       		.byte	0xa5
+ 1037 0104 0E010000 		.4byte	0x10e
+ 1038 0108 05       		.uleb128 0x5
+ 1039 0109 03       		.byte	0x3
+ 1040 010a 00000000 		.4byte	cy_meta_flashprotect
+ 1041 010e 08       		.uleb128 0x8
+ 1042 010f ED000000 		.4byte	0xed
+ 1043 0113 05       		.uleb128 0x5
+ 1044 0114 63000000 		.4byte	0x63
+ 1045 0118 23010000 		.4byte	0x123
+ 1046 011c 09       		.uleb128 0x9
+ 1047 011d 94000000 		.4byte	0x94
+ 1048 0121 0B       		.byte	0xb
+ 1049 0122 00       		.byte	0
+ 1050 0123 07       		.uleb128 0x7
+ 1051 0124 26000000 		.4byte	.LASF17
+ 1052 0128 01       		.byte	0x1
+ 1053 0129 CF       		.byte	0xcf
+ 1054 012a 34010000 		.4byte	0x134
+ 1055 012e 05       		.uleb128 0x5
+ 1056 012f 03       		.byte	0x3
+ 1057 0130 00000000 		.4byte	cy_metadata
+ 1058 0134 08       		.uleb128 0x8
+ 1059 0135 13010000 		.4byte	0x113
+ 1060 0139 00       		.byte	0
+ 1061              		.section	.debug_abbrev,"",%progbits
+ 1062              	.Ldebug_abbrev0:
+ 1063 0000 01       		.uleb128 0x1
+ 1064 0001 11       		.uleb128 0x11
+ 1065 0002 01       		.byte	0x1
+ 1066 0003 25       		.uleb128 0x25
+ 1067 0004 0E       		.uleb128 0xe
+ 1068 0005 13       		.uleb128 0x13
+ 1069 0006 0B       		.uleb128 0xb
+ 1070 0007 03       		.uleb128 0x3
+ 1071 0008 0E       		.uleb128 0xe
+ 1072 0009 1B       		.uleb128 0x1b
+ 1073 000a 0E       		.uleb128 0xe
+ 1074 000b 10       		.uleb128 0x10
+ 1075 000c 17       		.uleb128 0x17
+ 1076 000d 00       		.byte	0
+ 1077 000e 00       		.byte	0
+ 1078 000f 02       		.uleb128 0x2
+ 1079 0010 24       		.uleb128 0x24
+ARM GAS  C:\Users\Digi-Key\AppData\Local\Temp\ccPbXRUv.s 			page 20
+
+
+ 1080 0011 00       		.byte	0
+ 1081 0012 0B       		.uleb128 0xb
+ 1082 0013 0B       		.uleb128 0xb
+ 1083 0014 3E       		.uleb128 0x3e
+ 1084 0015 0B       		.uleb128 0xb
+ 1085 0016 03       		.uleb128 0x3
+ 1086 0017 0E       		.uleb128 0xe
+ 1087 0018 00       		.byte	0
+ 1088 0019 00       		.byte	0
+ 1089 001a 03       		.uleb128 0x3
+ 1090 001b 24       		.uleb128 0x24
+ 1091 001c 00       		.byte	0
+ 1092 001d 0B       		.uleb128 0xb
+ 1093 001e 0B       		.uleb128 0xb
+ 1094 001f 3E       		.uleb128 0x3e
+ 1095 0020 0B       		.uleb128 0xb
+ 1096 0021 03       		.uleb128 0x3
+ 1097 0022 08       		.uleb128 0x8
+ 1098 0023 00       		.byte	0
+ 1099 0024 00       		.byte	0
+ 1100 0025 04       		.uleb128 0x4
+ 1101 0026 16       		.uleb128 0x16
+ 1102 0027 00       		.byte	0
+ 1103 0028 03       		.uleb128 0x3
+ 1104 0029 0E       		.uleb128 0xe
+ 1105 002a 3A       		.uleb128 0x3a
+ 1106 002b 0B       		.uleb128 0xb
+ 1107 002c 3B       		.uleb128 0x3b
+ 1108 002d 0B       		.uleb128 0xb
+ 1109 002e 49       		.uleb128 0x49
+ 1110 002f 13       		.uleb128 0x13
+ 1111 0030 00       		.byte	0
+ 1112 0031 00       		.byte	0
+ 1113 0032 05       		.uleb128 0x5
+ 1114 0033 01       		.uleb128 0x1
+ 1115 0034 01       		.byte	0x1
+ 1116 0035 49       		.uleb128 0x49
+ 1117 0036 13       		.uleb128 0x13
+ 1118 0037 01       		.uleb128 0x1
+ 1119 0038 13       		.uleb128 0x13
+ 1120 0039 00       		.byte	0
+ 1121 003a 00       		.byte	0
+ 1122 003b 06       		.uleb128 0x6
+ 1123 003c 21       		.uleb128 0x21
+ 1124 003d 00       		.byte	0
+ 1125 003e 49       		.uleb128 0x49
+ 1126 003f 13       		.uleb128 0x13
+ 1127 0040 2F       		.uleb128 0x2f
+ 1128 0041 05       		.uleb128 0x5
+ 1129 0042 00       		.byte	0
+ 1130 0043 00       		.byte	0
+ 1131 0044 07       		.uleb128 0x7
+ 1132 0045 34       		.uleb128 0x34
+ 1133 0046 00       		.byte	0
+ 1134 0047 03       		.uleb128 0x3
+ 1135 0048 0E       		.uleb128 0xe
+ 1136 0049 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\Digi-Key\AppData\Local\Temp\ccPbXRUv.s 			page 21
+
+
+ 1137 004a 0B       		.uleb128 0xb
+ 1138 004b 3B       		.uleb128 0x3b
+ 1139 004c 0B       		.uleb128 0xb
+ 1140 004d 49       		.uleb128 0x49
+ 1141 004e 13       		.uleb128 0x13
+ 1142 004f 3F       		.uleb128 0x3f
+ 1143 0050 19       		.uleb128 0x19
+ 1144 0051 02       		.uleb128 0x2
+ 1145 0052 18       		.uleb128 0x18
+ 1146 0053 00       		.byte	0
+ 1147 0054 00       		.byte	0
+ 1148 0055 08       		.uleb128 0x8
+ 1149 0056 26       		.uleb128 0x26
+ 1150 0057 00       		.byte	0
+ 1151 0058 49       		.uleb128 0x49
+ 1152 0059 13       		.uleb128 0x13
+ 1153 005a 00       		.byte	0
+ 1154 005b 00       		.byte	0
+ 1155 005c 09       		.uleb128 0x9
+ 1156 005d 21       		.uleb128 0x21
+ 1157 005e 00       		.byte	0
+ 1158 005f 49       		.uleb128 0x49
+ 1159 0060 13       		.uleb128 0x13
+ 1160 0061 2F       		.uleb128 0x2f
+ 1161 0062 0B       		.uleb128 0xb
+ 1162 0063 00       		.byte	0
+ 1163 0064 00       		.byte	0
+ 1164 0065 00       		.byte	0
+ 1165              		.section	.debug_aranges,"",%progbits
+ 1166 0000 14000000 		.4byte	0x14
+ 1167 0004 0200     		.2byte	0x2
+ 1168 0006 00000000 		.4byte	.Ldebug_info0
+ 1169 000a 04       		.byte	0x4
+ 1170 000b 00       		.byte	0
+ 1171 000c 0000     		.2byte	0
+ 1172 000e 0000     		.2byte	0
+ 1173 0010 00000000 		.4byte	0
+ 1174 0014 00000000 		.4byte	0
+ 1175              		.section	.debug_line,"",%progbits
+ 1176              	.Ldebug_line0:
+ 1177 0000 4F000000 		.section	.debug_str,"MS",%progbits,1
+ 1177      02004900 
+ 1177      00000201 
+ 1177      FB0E0D00 
+ 1177      01010101 
+ 1178              	.LASF19:
+ 1179 0000 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\cymetadata.c\000"
+ 1179      6E657261 
+ 1179      7465645F 
+ 1179      536F7572 
+ 1179      63655C50 
+ 1180              	.LASF17:
+ 1181 0026 63795F6D 		.ascii	"cy_metadata\000"
+ 1181      65746164 
+ 1181      61746100 
+ 1182              	.LASF9:
+ 1183 0032 666C6F61 		.ascii	"float\000"
+ARM GAS  C:\Users\Digi-Key\AppData\Local\Temp\ccPbXRUv.s 			page 22
+
+
+ 1183      7400
+ 1184              	.LASF1:
+ 1185 0038 756E7369 		.ascii	"unsigned char\000"
+ 1185      676E6564 
+ 1185      20636861 
+ 1185      7200
+ 1186              	.LASF5:
+ 1187 0046 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1187      20756E73 
+ 1187      69676E65 
+ 1187      6420696E 
+ 1187      7400
+ 1188              	.LASF3:
+ 1189 0058 73686F72 		.ascii	"short unsigned int\000"
+ 1189      7420756E 
+ 1189      7369676E 
+ 1189      65642069 
+ 1189      6E7400
+ 1190              	.LASF10:
+ 1191 006b 646F7562 		.ascii	"double\000"
+ 1191      6C6500
+ 1192              	.LASF14:
+ 1193 0072 63795F6D 		.ascii	"cy_meta_custnvl\000"
+ 1193      6574615F 
+ 1193      63757374 
+ 1193      6E766C00 
+ 1194              	.LASF13:
+ 1195 0082 63795F6D 		.ascii	"cy_meta_configecc\000"
+ 1195      6574615F 
+ 1195      636F6E66 
+ 1195      69676563 
+ 1195      6300
+ 1196              	.LASF18:
+ 1197 0094 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1197      4320342E 
+ 1197      392E3320 
+ 1197      32303135 
+ 1197      30333033 
+ 1198 00c7 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 1198      20726576 
+ 1198      6973696F 
+ 1198      6E203232 
+ 1198      31323230 
+ 1199 00fa 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1199      66756E63 
+ 1199      74696F6E 
+ 1199      2D736563 
+ 1199      74696F6E 
+ 1200              	.LASF8:
+ 1201 0122 756E7369 		.ascii	"unsigned int\000"
+ 1201      676E6564 
+ 1201      20696E74 
+ 1201      00
+ 1202              	.LASF7:
+ 1203 012f 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1203      206C6F6E 
+ 1203      6720756E 
+ARM GAS  C:\Users\Digi-Key\AppData\Local\Temp\ccPbXRUv.s 			page 23
+
+
+ 1203      7369676E 
+ 1203      65642069 
+ 1204              	.LASF16:
+ 1205 0146 63795F6D 		.ascii	"cy_meta_flashprotect\000"
+ 1205      6574615F 
+ 1205      666C6173 
+ 1205      6870726F 
+ 1205      74656374 
+ 1206              	.LASF20:
+ 1207 015b 433A5C55 		.ascii	"C:\\Users\\Digi-Key\\Documents\\PSoC Creator\\Works"
+ 1207      73657273 
+ 1207      5C446967 
+ 1207      692D4B65 
+ 1207      795C446F 
+ 1208 0189 70616365 		.ascii	"pace03\\Design01.cydsn\000"
+ 1208      30335C44 
+ 1208      65736967 
+ 1208      6E30312E 
+ 1208      63796473 
+ 1209              	.LASF15:
+ 1210 019f 63795F6D 		.ascii	"cy_meta_wonvl\000"
+ 1210      6574615F 
+ 1210      776F6E76 
+ 1210      6C00
+ 1211              	.LASF12:
+ 1212 01ad 73697A65 		.ascii	"sizetype\000"
+ 1212      74797065 
+ 1212      00
+ 1213              	.LASF6:
+ 1214 01b6 6C6F6E67 		.ascii	"long long int\000"
+ 1214      206C6F6E 
+ 1214      6720696E 
+ 1214      7400
+ 1215              	.LASF11:
+ 1216 01c4 63686172 		.ascii	"char\000"
+ 1216      00
+ 1217              	.LASF2:
+ 1218 01c9 73686F72 		.ascii	"short int\000"
+ 1218      7420696E 
+ 1218      7400
+ 1219              	.LASF21:
+ 1220 01d3 75696E74 		.ascii	"uint8\000"
+ 1220      3800
+ 1221              	.LASF4:
+ 1222 01d9 6C6F6E67 		.ascii	"long int\000"
+ 1222      20696E74 
+ 1222      00
+ 1223              	.LASF0:
+ 1224 01e2 7369676E 		.ascii	"signed char\000"
+ 1224      65642063 
+ 1224      68617200 
+ 1225              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

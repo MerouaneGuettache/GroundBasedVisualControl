@@ -1,0 +1,954 @@
+ARM GAS  C:\Users\MYPC~1\AppData\Local\Temp\cc40mQTg.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"main.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.global	__aeabi_f2d
+  20              		.section	.text.main,"ax",%progbits
+  21              		.align	2
+  22              		.global	main
+  23              		.thumb
+  24              		.thumb_func
+  25              		.type	main, %function
+  26              	main:
+  27              	.LFB64:
+  28              		.file 1 "main.c"
+   1:main.c        **** /* ========================================
+   2:main.c        ****  *
+   3:main.c        ****  * VDAC example 
+   4:main.c        ****  *
+   5:main.c        ****  * ========================================
+   6:main.c        **** */
+   7:main.c        **** #include <project.h>
+   8:main.c        **** #include <stdio.h> 
+   9:main.c        **** #include <math.h> 
+  10:main.c        **** 
+  11:main.c        **** int main()
+  12:main.c        **** {
+  29              		.loc 1 12 0
+  30              		.cfi_startproc
+  31              		@ args = 0, pretend = 0, frame = 56
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  33 0000 10B5     		push	{r4, lr}
+  34              		.cfi_def_cfa_offset 8
+  35              		.cfi_offset 4, -8
+  36              		.cfi_offset 14, -4
+  37 0002 8EB0     		sub	sp, sp, #56
+  38              		.cfi_def_cfa_offset 64
+  13:main.c        ****     CyGlobalIntEnable; /* Enable global interrupts. */
+  39              		.loc 1 13 0
+  40              		.syntax unified
+  41              	@ 13 "main.c" 1
+  42 0004 62B6     		CPSIE   i
+  43              	@ 0 "" 2
+  14:main.c        **** 
+ARM GAS  C:\Users\MYPC~1\AppData\Local\Temp\cc40mQTg.s 			page 2
+
+
+  15:main.c        ****     /*Start Components*/ 
+  16:main.c        ****     
+  17:main.c        ****     ADC_Start(); 
+  44              		.loc 1 17 0
+  45              		.thumb
+  46              		.syntax unified
+  47 0006 FFF7FEFF 		bl	ADC_Start
+  48              	.LVL0:
+  18:main.c        ****     VDAC_Start(); 
+  49              		.loc 1 18 0
+  50 000a FFF7FEFF 		bl	VDAC_Start
+  51              	.LVL1:
+  19:main.c        ****     UART_Start(); 
+  52              		.loc 1 19 0
+  53 000e FFF7FEFF 		bl	UART_Start
+  54              	.LVL2:
+  55              	.L4:
+  20:main.c        ****     
+  21:main.c        ****     /*Declare variables*/ 
+  22:main.c        ****     uint16 ADC_reading; 
+  23:main.c        ****     float voltage; 
+  24:main.c        ****     char  output_string[50]; 
+  25:main.c        ****     uint8 i = 0; 
+  26:main.c        **** 
+  27:main.c        ****     while(1)
+  28:main.c        ****     {
+  29:main.c        ****         
+  30:main.c        ****         for (i = 0; i < 255; i++)
+  56              		.loc 1 30 0
+  57 0012 0024     		movs	r4, #0
+  58 0014 1CE0     		b	.L2
+  59              	.LVL3:
+  60              	.L3:
+  31:main.c        ****         {
+  32:main.c        ****             VDAC_SetValue(i);   //increment VDAC output 
+  61              		.loc 1 32 0 discriminator 3
+  62 0016 2046     		mov	r0, r4
+  63 0018 FFF7FEFF 		bl	VDAC_SetValue
+  64              	.LVL4:
+  33:main.c        ****             
+  34:main.c        ****             ADC_StartConvert(); // read Vdac output 
+  65              		.loc 1 34 0 discriminator 3
+  66 001c FFF7FEFF 		bl	ADC_StartConvert
+  67              	.LVL5:
+  35:main.c        ****             
+  36:main.c        ****             ADC_reading = ADC_GetResult16(); 
+  68              		.loc 1 36 0 discriminator 3
+  69 0020 FFF7FEFF 		bl	ADC_GetResult16
+  70              	.LVL6:
+  37:main.c        ****             
+  38:main.c        ****             voltage = ADC_CountsTo_Volts(ADC_reading); 
+  71              		.loc 1 38 0 discriminator 3
+  72 0024 80B2     		uxth	r0, r0
+  73 0026 FFF7FEFF 		bl	ADC_CountsTo_Volts
+  74              	.LVL7:
+  39:main.c        ****            
+  40:main.c        ****             
+ARM GAS  C:\Users\MYPC~1\AppData\Local\Temp\cc40mQTg.s 			page 3
+
+
+  41:main.c        ****             sprintf(output_string, "%9.6f", voltage); 
+  75              		.loc 1 41 0 discriminator 3
+  76 002a FFF7FEFF 		bl	__aeabi_f2d
+  77              	.LVL8:
+  78 002e 0246     		mov	r2, r0
+  79 0030 0B46     		mov	r3, r1
+  80 0032 0949     		ldr	r1, .L6
+  81 0034 01A8     		add	r0, sp, #4
+  82 0036 FFF7FEFF 		bl	sprintf
+  83              	.LVL9:
+  42:main.c        ****             UART_PutString(output_string); //print to UART 
+  84              		.loc 1 42 0 discriminator 3
+  85 003a 01A8     		add	r0, sp, #4
+  86 003c FFF7FEFF 		bl	UART_PutString
+  87              	.LVL10:
+  43:main.c        ****             UART_PutString("\r\n");           
+  88              		.loc 1 43 0 discriminator 3
+  89 0040 0648     		ldr	r0, .L6+4
+  90 0042 FFF7FEFF 		bl	UART_PutString
+  91              	.LVL11:
+  44:main.c        ****             
+  45:main.c        ****             CyDelay(250); 
+  92              		.loc 1 45 0 discriminator 3
+  93 0046 FA20     		movs	r0, #250
+  94 0048 FFF7FEFF 		bl	CyDelay
+  95              	.LVL12:
+  30:main.c        ****         {
+  96              		.loc 1 30 0 discriminator 3
+  97 004c 0134     		adds	r4, r4, #1
+  98              	.LVL13:
+  99 004e E4B2     		uxtb	r4, r4
+ 100              	.LVL14:
+ 101              	.L2:
+  30:main.c        ****         {
+ 102              		.loc 1 30 0 is_stmt 0 discriminator 1
+ 103 0050 FF2C     		cmp	r4, #255
+ 104 0052 E0D1     		bne	.L3
+ 105 0054 DDE7     		b	.L4
+ 106              	.L7:
+ 107 0056 00BF     		.align	2
+ 108              	.L6:
+ 109 0058 00000000 		.word	.LC0
+ 110 005c 08000000 		.word	.LC1
+ 111              		.cfi_endproc
+ 112              	.LFE64:
+ 113              		.size	main, .-main
+ 114              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 115              		.align	2
+ 116              	.LC0:
+ 117 0000 25392E36 		.ascii	"%9.6f\000"
+ 117      6600
+ 118 0006 0000     		.space	2
+ 119              	.LC1:
+ 120 0008 0D0A00   		.ascii	"\015\012\000"
+ 121              		.text
+ 122              	.Letext0:
+ 123              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ARM GAS  C:\Users\MYPC~1\AppData\Local\Temp\cc40mQTg.s 			page 4
+
+
+ 124              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 125              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
+ 126              		.file 5 "Generated_Source\\PSoC5/ADC.h"
+ 127              		.file 6 "Generated_Source\\PSoC5/VDAC.h"
+ 128              		.file 7 "Generated_Source\\PSoC5/UART.h"
+ 129              		.file 8 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 130              		.file 9 "Generated_Source\\PSoC5/CyLib.h"
+ 131              		.file 10 "Generated_Source\\PSoC5/core_cm3.h"
+ 132              		.section	.debug_info,"",%progbits
+ 133              	.Ldebug_info0:
+ 134 0000 3B020000 		.4byte	0x23b
+ 135 0004 0400     		.2byte	0x4
+ 136 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 137 000a 04       		.byte	0x4
+ 138 000b 01       		.uleb128 0x1
+ 139 000c 83000000 		.4byte	.LASF31
+ 140 0010 0C       		.byte	0xc
+ 141 0011 DA010000 		.4byte	.LASF32
+ 142 0015 0A000000 		.4byte	.LASF33
+ 143 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 144 001d 00000000 		.4byte	0
+ 145 0021 00000000 		.4byte	.Ldebug_line0
+ 146 0025 02       		.uleb128 0x2
+ 147 0026 01       		.byte	0x1
+ 148 0027 06       		.byte	0x6
+ 149 0028 25020000 		.4byte	.LASF0
+ 150 002c 02       		.uleb128 0x2
+ 151 002d 01       		.byte	0x1
+ 152 002e 08       		.byte	0x8
+ 153 002f 75000000 		.4byte	.LASF1
+ 154 0033 02       		.uleb128 0x2
+ 155 0034 02       		.byte	0x2
+ 156 0035 05       		.byte	0x5
+ 157 0036 F4010000 		.4byte	.LASF2
+ 158 003a 02       		.uleb128 0x2
+ 159 003b 02       		.byte	0x2
+ 160 003c 07       		.byte	0x7
+ 161 003d 34010000 		.4byte	.LASF3
+ 162 0041 03       		.uleb128 0x3
+ 163 0042 00000000 		.4byte	.LASF9
+ 164 0046 02       		.byte	0x2
+ 165 0047 3F       		.byte	0x3f
+ 166 0048 4C000000 		.4byte	0x4c
+ 167 004c 02       		.uleb128 0x2
+ 168 004d 04       		.byte	0x4
+ 169 004e 05       		.byte	0x5
+ 170 004f 10020000 		.4byte	.LASF4
+ 171 0053 02       		.uleb128 0x2
+ 172 0054 04       		.byte	0x4
+ 173 0055 07       		.byte	0x7
+ 174 0056 22010000 		.4byte	.LASF5
+ 175 005a 02       		.uleb128 0x2
+ 176 005b 08       		.byte	0x8
+ 177 005c 05       		.byte	0x5
+ 178 005d CC010000 		.4byte	.LASF6
+ 179 0061 02       		.uleb128 0x2
+ 180 0062 08       		.byte	0x8
+ARM GAS  C:\Users\MYPC~1\AppData\Local\Temp\cc40mQTg.s 			page 5
+
+
+ 181 0063 07       		.byte	0x7
+ 182 0064 87010000 		.4byte	.LASF7
+ 183 0068 04       		.uleb128 0x4
+ 184 0069 04       		.byte	0x4
+ 185 006a 05       		.byte	0x5
+ 186 006b 696E7400 		.ascii	"int\000"
+ 187 006f 02       		.uleb128 0x2
+ 188 0070 04       		.byte	0x4
+ 189 0071 07       		.byte	0x7
+ 190 0072 7A010000 		.4byte	.LASF8
+ 191 0076 03       		.uleb128 0x3
+ 192 0077 A8010000 		.4byte	.LASF10
+ 193 007b 03       		.byte	0x3
+ 194 007c 2C       		.byte	0x2c
+ 195 007d 41000000 		.4byte	0x41
+ 196 0081 03       		.uleb128 0x3
+ 197 0082 FE010000 		.4byte	.LASF11
+ 198 0086 04       		.byte	0x4
+ 199 0087 B4       		.byte	0xb4
+ 200 0088 2C000000 		.4byte	0x2c
+ 201 008c 03       		.uleb128 0x3
+ 202 008d 73010000 		.4byte	.LASF12
+ 203 0091 04       		.byte	0x4
+ 204 0092 B5       		.byte	0xb5
+ 205 0093 3A000000 		.4byte	0x3a
+ 206 0097 02       		.uleb128 0x2
+ 207 0098 04       		.byte	0x4
+ 208 0099 04       		.byte	0x4
+ 209 009a 6F000000 		.4byte	.LASF13
+ 210 009e 02       		.uleb128 0x2
+ 211 009f 08       		.byte	0x8
+ 212 00a0 04       		.byte	0x4
+ 213 00a1 67010000 		.4byte	.LASF14
+ 214 00a5 02       		.uleb128 0x2
+ 215 00a6 01       		.byte	0x1
+ 216 00a7 08       		.byte	0x8
+ 217 00a8 E1010000 		.4byte	.LASF15
+ 218 00ac 02       		.uleb128 0x2
+ 219 00ad 08       		.byte	0x8
+ 220 00ae 04       		.byte	0x4
+ 221 00af 19020000 		.4byte	.LASF16
+ 222 00b3 02       		.uleb128 0x2
+ 223 00b4 04       		.byte	0x4
+ 224 00b5 07       		.byte	0x7
+ 225 00b6 B0010000 		.4byte	.LASF17
+ 226 00ba 05       		.uleb128 0x5
+ 227 00bb 6E010000 		.4byte	.LASF34
+ 228 00bf 01       		.byte	0x1
+ 229 00c0 0B       		.byte	0xb
+ 230 00c1 68000000 		.4byte	0x68
+ 231 00c5 00000000 		.4byte	.LFB64
+ 232 00c9 60000000 		.4byte	.LFE64-.LFB64
+ 233 00cd 01       		.uleb128 0x1
+ 234 00ce 9C       		.byte	0x9c
+ 235 00cf AF010000 		.4byte	0x1af
+ 236 00d3 06       		.uleb128 0x6
+ 237 00d4 04020000 		.4byte	.LASF18
+ARM GAS  C:\Users\MYPC~1\AppData\Local\Temp\cc40mQTg.s 			page 6
+
+
+ 238 00d8 01       		.byte	0x1
+ 239 00d9 16       		.byte	0x16
+ 240 00da 8C000000 		.4byte	0x8c
+ 241 00de 00000000 		.4byte	.LLST0
+ 242 00e2 06       		.uleb128 0x6
+ 243 00e3 52010000 		.4byte	.LASF19
+ 244 00e7 01       		.byte	0x1
+ 245 00e8 17       		.byte	0x17
+ 246 00e9 97000000 		.4byte	0x97
+ 247 00ed 13000000 		.4byte	.LLST1
+ 248 00f1 07       		.uleb128 0x7
+ 249 00f2 61000000 		.4byte	.LASF20
+ 250 00f6 01       		.byte	0x1
+ 251 00f7 18       		.byte	0x18
+ 252 00f8 AF010000 		.4byte	0x1af
+ 253 00fc 02       		.uleb128 0x2
+ 254 00fd 91       		.byte	0x91
+ 255 00fe 44       		.sleb128 -60
+ 256 00ff 08       		.uleb128 0x8
+ 257 0100 6900     		.ascii	"i\000"
+ 258 0102 01       		.byte	0x1
+ 259 0103 19       		.byte	0x19
+ 260 0104 81000000 		.4byte	0x81
+ 261 0108 26000000 		.4byte	.LLST2
+ 262 010c 09       		.uleb128 0x9
+ 263 010d 0A000000 		.4byte	.LVL0
+ 264 0111 D0010000 		.4byte	0x1d0
+ 265 0115 09       		.uleb128 0x9
+ 266 0116 0E000000 		.4byte	.LVL1
+ 267 011a DB010000 		.4byte	0x1db
+ 268 011e 09       		.uleb128 0x9
+ 269 011f 12000000 		.4byte	.LVL2
+ 270 0123 E6010000 		.4byte	0x1e6
+ 271 0127 0A       		.uleb128 0xa
+ 272 0128 1C000000 		.4byte	.LVL4
+ 273 012c F1010000 		.4byte	0x1f1
+ 274 0130 3B010000 		.4byte	0x13b
+ 275 0134 0B       		.uleb128 0xb
+ 276 0135 01       		.uleb128 0x1
+ 277 0136 50       		.byte	0x50
+ 278 0137 02       		.uleb128 0x2
+ 279 0138 74       		.byte	0x74
+ 280 0139 00       		.sleb128 0
+ 281 013a 00       		.byte	0
+ 282 013b 09       		.uleb128 0x9
+ 283 013c 20000000 		.4byte	.LVL5
+ 284 0140 FC010000 		.4byte	0x1fc
+ 285 0144 09       		.uleb128 0x9
+ 286 0145 24000000 		.4byte	.LVL6
+ 287 0149 07020000 		.4byte	0x207
+ 288 014d 09       		.uleb128 0x9
+ 289 014e 2A000000 		.4byte	.LVL7
+ 290 0152 12020000 		.4byte	0x212
+ 291 0156 0A       		.uleb128 0xa
+ 292 0157 3A000000 		.4byte	.LVL9
+ 293 015b 1D020000 		.4byte	0x21d
+ 294 015f 73010000 		.4byte	0x173
+ARM GAS  C:\Users\MYPC~1\AppData\Local\Temp\cc40mQTg.s 			page 7
+
+
+ 295 0163 0B       		.uleb128 0xb
+ 296 0164 01       		.uleb128 0x1
+ 297 0165 50       		.byte	0x50
+ 298 0166 02       		.uleb128 0x2
+ 299 0167 91       		.byte	0x91
+ 300 0168 44       		.sleb128 -60
+ 301 0169 0B       		.uleb128 0xb
+ 302 016a 01       		.uleb128 0x1
+ 303 016b 51       		.byte	0x51
+ 304 016c 05       		.uleb128 0x5
+ 305 016d 03       		.byte	0x3
+ 306 016e 00000000 		.4byte	.LC0
+ 307 0172 00       		.byte	0
+ 308 0173 0A       		.uleb128 0xa
+ 309 0174 40000000 		.4byte	.LVL10
+ 310 0178 28020000 		.4byte	0x228
+ 311 017c 87010000 		.4byte	0x187
+ 312 0180 0B       		.uleb128 0xb
+ 313 0181 01       		.uleb128 0x1
+ 314 0182 50       		.byte	0x50
+ 315 0183 02       		.uleb128 0x2
+ 316 0184 91       		.byte	0x91
+ 317 0185 44       		.sleb128 -60
+ 318 0186 00       		.byte	0
+ 319 0187 0A       		.uleb128 0xa
+ 320 0188 46000000 		.4byte	.LVL11
+ 321 018c 28020000 		.4byte	0x228
+ 322 0190 9E010000 		.4byte	0x19e
+ 323 0194 0B       		.uleb128 0xb
+ 324 0195 01       		.uleb128 0x1
+ 325 0196 50       		.byte	0x50
+ 326 0197 05       		.uleb128 0x5
+ 327 0198 03       		.byte	0x3
+ 328 0199 08000000 		.4byte	.LC1
+ 329 019d 00       		.byte	0
+ 330 019e 0C       		.uleb128 0xc
+ 331 019f 4C000000 		.4byte	.LVL12
+ 332 01a3 33020000 		.4byte	0x233
+ 333 01a7 0B       		.uleb128 0xb
+ 334 01a8 01       		.uleb128 0x1
+ 335 01a9 50       		.byte	0x50
+ 336 01aa 02       		.uleb128 0x2
+ 337 01ab 08       		.byte	0x8
+ 338 01ac FA       		.byte	0xfa
+ 339 01ad 00       		.byte	0
+ 340 01ae 00       		.byte	0
+ 341 01af 0D       		.uleb128 0xd
+ 342 01b0 A5000000 		.4byte	0xa5
+ 343 01b4 BF010000 		.4byte	0x1bf
+ 344 01b8 0E       		.uleb128 0xe
+ 345 01b9 B3000000 		.4byte	0xb3
+ 346 01bd 31       		.byte	0x31
+ 347 01be 00       		.byte	0
+ 348 01bf 0F       		.uleb128 0xf
+ 349 01c0 5A010000 		.4byte	.LASF35
+ 350 01c4 0A       		.byte	0xa
+ 351 01c5 2A06     		.2byte	0x62a
+ARM GAS  C:\Users\MYPC~1\AppData\Local\Temp\cc40mQTg.s 			page 8
+
+
+ 352 01c7 CB010000 		.4byte	0x1cb
+ 353 01cb 10       		.uleb128 0x10
+ 354 01cc 76000000 		.4byte	0x76
+ 355 01d0 11       		.uleb128 0x11
+ 356 01d1 9E010000 		.4byte	.LASF21
+ 357 01d5 9E010000 		.4byte	.LASF21
+ 358 01d9 05       		.byte	0x5
+ 359 01da 3A       		.byte	0x3a
+ 360 01db 11       		.uleb128 0x11
+ 361 01dc 56000000 		.4byte	.LASF22
+ 362 01e0 56000000 		.4byte	.LASF22
+ 363 01e4 06       		.byte	0x6
+ 364 01e5 33       		.byte	0x33
+ 365 01e6 11       		.uleb128 0x11
+ 366 01e7 47010000 		.4byte	.LASF23
+ 367 01eb 47010000 		.4byte	.LASF23
+ 368 01ef 07       		.byte	0x7
+ 369 01f0 54       		.byte	0x54
+ 370 01f1 11       		.uleb128 0x11
+ 371 01f2 E6010000 		.4byte	.LASF24
+ 372 01f6 E6010000 		.4byte	.LASF24
+ 373 01fa 06       		.byte	0x6
+ 374 01fb 37       		.byte	0x37
+ 375 01fc 11       		.uleb128 0x11
+ 376 01fd 11010000 		.4byte	.LASF25
+ 377 0201 11010000 		.4byte	.LASF25
+ 378 0205 05       		.byte	0x5
+ 379 0206 3D       		.byte	0x3d
+ 380 0207 11       		.uleb128 0x11
+ 381 0208 46000000 		.4byte	.LASF26
+ 382 020c 46000000 		.4byte	.LASF26
+ 383 0210 05       		.byte	0x5
+ 384 0211 41       		.byte	0x41
+ 385 0212 11       		.uleb128 0x11
+ 386 0213 B9010000 		.4byte	.LASF27
+ 387 0217 B9010000 		.4byte	.LASF27
+ 388 021b 05       		.byte	0x5
+ 389 021c 49       		.byte	0x49
+ 390 021d 11       		.uleb128 0x11
+ 391 021e 40020000 		.4byte	.LASF28
+ 392 0222 40020000 		.4byte	.LASF28
+ 393 0226 08       		.byte	0x8
+ 394 0227 E7       		.byte	0xe7
+ 395 0228 11       		.uleb128 0x11
+ 396 0229 31020000 		.4byte	.LASF29
+ 397 022d 31020000 		.4byte	.LASF29
+ 398 0231 07       		.byte	0x7
+ 399 0232 8B       		.byte	0x8b
+ 400 0233 11       		.uleb128 0x11
+ 401 0234 48020000 		.4byte	.LASF30
+ 402 0238 48020000 		.4byte	.LASF30
+ 403 023c 09       		.byte	0x9
+ 404 023d 77       		.byte	0x77
+ 405 023e 00       		.byte	0
+ 406              		.section	.debug_abbrev,"",%progbits
+ 407              	.Ldebug_abbrev0:
+ 408 0000 01       		.uleb128 0x1
+ARM GAS  C:\Users\MYPC~1\AppData\Local\Temp\cc40mQTg.s 			page 9
+
+
+ 409 0001 11       		.uleb128 0x11
+ 410 0002 01       		.byte	0x1
+ 411 0003 25       		.uleb128 0x25
+ 412 0004 0E       		.uleb128 0xe
+ 413 0005 13       		.uleb128 0x13
+ 414 0006 0B       		.uleb128 0xb
+ 415 0007 03       		.uleb128 0x3
+ 416 0008 0E       		.uleb128 0xe
+ 417 0009 1B       		.uleb128 0x1b
+ 418 000a 0E       		.uleb128 0xe
+ 419 000b 55       		.uleb128 0x55
+ 420 000c 17       		.uleb128 0x17
+ 421 000d 11       		.uleb128 0x11
+ 422 000e 01       		.uleb128 0x1
+ 423 000f 10       		.uleb128 0x10
+ 424 0010 17       		.uleb128 0x17
+ 425 0011 00       		.byte	0
+ 426 0012 00       		.byte	0
+ 427 0013 02       		.uleb128 0x2
+ 428 0014 24       		.uleb128 0x24
+ 429 0015 00       		.byte	0
+ 430 0016 0B       		.uleb128 0xb
+ 431 0017 0B       		.uleb128 0xb
+ 432 0018 3E       		.uleb128 0x3e
+ 433 0019 0B       		.uleb128 0xb
+ 434 001a 03       		.uleb128 0x3
+ 435 001b 0E       		.uleb128 0xe
+ 436 001c 00       		.byte	0
+ 437 001d 00       		.byte	0
+ 438 001e 03       		.uleb128 0x3
+ 439 001f 16       		.uleb128 0x16
+ 440 0020 00       		.byte	0
+ 441 0021 03       		.uleb128 0x3
+ 442 0022 0E       		.uleb128 0xe
+ 443 0023 3A       		.uleb128 0x3a
+ 444 0024 0B       		.uleb128 0xb
+ 445 0025 3B       		.uleb128 0x3b
+ 446 0026 0B       		.uleb128 0xb
+ 447 0027 49       		.uleb128 0x49
+ 448 0028 13       		.uleb128 0x13
+ 449 0029 00       		.byte	0
+ 450 002a 00       		.byte	0
+ 451 002b 04       		.uleb128 0x4
+ 452 002c 24       		.uleb128 0x24
+ 453 002d 00       		.byte	0
+ 454 002e 0B       		.uleb128 0xb
+ 455 002f 0B       		.uleb128 0xb
+ 456 0030 3E       		.uleb128 0x3e
+ 457 0031 0B       		.uleb128 0xb
+ 458 0032 03       		.uleb128 0x3
+ 459 0033 08       		.uleb128 0x8
+ 460 0034 00       		.byte	0
+ 461 0035 00       		.byte	0
+ 462 0036 05       		.uleb128 0x5
+ 463 0037 2E       		.uleb128 0x2e
+ 464 0038 01       		.byte	0x1
+ 465 0039 3F       		.uleb128 0x3f
+ARM GAS  C:\Users\MYPC~1\AppData\Local\Temp\cc40mQTg.s 			page 10
+
+
+ 466 003a 19       		.uleb128 0x19
+ 467 003b 03       		.uleb128 0x3
+ 468 003c 0E       		.uleb128 0xe
+ 469 003d 3A       		.uleb128 0x3a
+ 470 003e 0B       		.uleb128 0xb
+ 471 003f 3B       		.uleb128 0x3b
+ 472 0040 0B       		.uleb128 0xb
+ 473 0041 49       		.uleb128 0x49
+ 474 0042 13       		.uleb128 0x13
+ 475 0043 8701     		.uleb128 0x87
+ 476 0045 19       		.uleb128 0x19
+ 477 0046 11       		.uleb128 0x11
+ 478 0047 01       		.uleb128 0x1
+ 479 0048 12       		.uleb128 0x12
+ 480 0049 06       		.uleb128 0x6
+ 481 004a 40       		.uleb128 0x40
+ 482 004b 18       		.uleb128 0x18
+ 483 004c 9642     		.uleb128 0x2116
+ 484 004e 19       		.uleb128 0x19
+ 485 004f 01       		.uleb128 0x1
+ 486 0050 13       		.uleb128 0x13
+ 487 0051 00       		.byte	0
+ 488 0052 00       		.byte	0
+ 489 0053 06       		.uleb128 0x6
+ 490 0054 34       		.uleb128 0x34
+ 491 0055 00       		.byte	0
+ 492 0056 03       		.uleb128 0x3
+ 493 0057 0E       		.uleb128 0xe
+ 494 0058 3A       		.uleb128 0x3a
+ 495 0059 0B       		.uleb128 0xb
+ 496 005a 3B       		.uleb128 0x3b
+ 497 005b 0B       		.uleb128 0xb
+ 498 005c 49       		.uleb128 0x49
+ 499 005d 13       		.uleb128 0x13
+ 500 005e 02       		.uleb128 0x2
+ 501 005f 17       		.uleb128 0x17
+ 502 0060 00       		.byte	0
+ 503 0061 00       		.byte	0
+ 504 0062 07       		.uleb128 0x7
+ 505 0063 34       		.uleb128 0x34
+ 506 0064 00       		.byte	0
+ 507 0065 03       		.uleb128 0x3
+ 508 0066 0E       		.uleb128 0xe
+ 509 0067 3A       		.uleb128 0x3a
+ 510 0068 0B       		.uleb128 0xb
+ 511 0069 3B       		.uleb128 0x3b
+ 512 006a 0B       		.uleb128 0xb
+ 513 006b 49       		.uleb128 0x49
+ 514 006c 13       		.uleb128 0x13
+ 515 006d 02       		.uleb128 0x2
+ 516 006e 18       		.uleb128 0x18
+ 517 006f 00       		.byte	0
+ 518 0070 00       		.byte	0
+ 519 0071 08       		.uleb128 0x8
+ 520 0072 34       		.uleb128 0x34
+ 521 0073 00       		.byte	0
+ 522 0074 03       		.uleb128 0x3
+ARM GAS  C:\Users\MYPC~1\AppData\Local\Temp\cc40mQTg.s 			page 11
+
+
+ 523 0075 08       		.uleb128 0x8
+ 524 0076 3A       		.uleb128 0x3a
+ 525 0077 0B       		.uleb128 0xb
+ 526 0078 3B       		.uleb128 0x3b
+ 527 0079 0B       		.uleb128 0xb
+ 528 007a 49       		.uleb128 0x49
+ 529 007b 13       		.uleb128 0x13
+ 530 007c 02       		.uleb128 0x2
+ 531 007d 17       		.uleb128 0x17
+ 532 007e 00       		.byte	0
+ 533 007f 00       		.byte	0
+ 534 0080 09       		.uleb128 0x9
+ 535 0081 898201   		.uleb128 0x4109
+ 536 0084 00       		.byte	0
+ 537 0085 11       		.uleb128 0x11
+ 538 0086 01       		.uleb128 0x1
+ 539 0087 31       		.uleb128 0x31
+ 540 0088 13       		.uleb128 0x13
+ 541 0089 00       		.byte	0
+ 542 008a 00       		.byte	0
+ 543 008b 0A       		.uleb128 0xa
+ 544 008c 898201   		.uleb128 0x4109
+ 545 008f 01       		.byte	0x1
+ 546 0090 11       		.uleb128 0x11
+ 547 0091 01       		.uleb128 0x1
+ 548 0092 31       		.uleb128 0x31
+ 549 0093 13       		.uleb128 0x13
+ 550 0094 01       		.uleb128 0x1
+ 551 0095 13       		.uleb128 0x13
+ 552 0096 00       		.byte	0
+ 553 0097 00       		.byte	0
+ 554 0098 0B       		.uleb128 0xb
+ 555 0099 8A8201   		.uleb128 0x410a
+ 556 009c 00       		.byte	0
+ 557 009d 02       		.uleb128 0x2
+ 558 009e 18       		.uleb128 0x18
+ 559 009f 9142     		.uleb128 0x2111
+ 560 00a1 18       		.uleb128 0x18
+ 561 00a2 00       		.byte	0
+ 562 00a3 00       		.byte	0
+ 563 00a4 0C       		.uleb128 0xc
+ 564 00a5 898201   		.uleb128 0x4109
+ 565 00a8 01       		.byte	0x1
+ 566 00a9 11       		.uleb128 0x11
+ 567 00aa 01       		.uleb128 0x1
+ 568 00ab 31       		.uleb128 0x31
+ 569 00ac 13       		.uleb128 0x13
+ 570 00ad 00       		.byte	0
+ 571 00ae 00       		.byte	0
+ 572 00af 0D       		.uleb128 0xd
+ 573 00b0 01       		.uleb128 0x1
+ 574 00b1 01       		.byte	0x1
+ 575 00b2 49       		.uleb128 0x49
+ 576 00b3 13       		.uleb128 0x13
+ 577 00b4 01       		.uleb128 0x1
+ 578 00b5 13       		.uleb128 0x13
+ 579 00b6 00       		.byte	0
+ARM GAS  C:\Users\MYPC~1\AppData\Local\Temp\cc40mQTg.s 			page 12
+
+
+ 580 00b7 00       		.byte	0
+ 581 00b8 0E       		.uleb128 0xe
+ 582 00b9 21       		.uleb128 0x21
+ 583 00ba 00       		.byte	0
+ 584 00bb 49       		.uleb128 0x49
+ 585 00bc 13       		.uleb128 0x13
+ 586 00bd 2F       		.uleb128 0x2f
+ 587 00be 0B       		.uleb128 0xb
+ 588 00bf 00       		.byte	0
+ 589 00c0 00       		.byte	0
+ 590 00c1 0F       		.uleb128 0xf
+ 591 00c2 34       		.uleb128 0x34
+ 592 00c3 00       		.byte	0
+ 593 00c4 03       		.uleb128 0x3
+ 594 00c5 0E       		.uleb128 0xe
+ 595 00c6 3A       		.uleb128 0x3a
+ 596 00c7 0B       		.uleb128 0xb
+ 597 00c8 3B       		.uleb128 0x3b
+ 598 00c9 05       		.uleb128 0x5
+ 599 00ca 49       		.uleb128 0x49
+ 600 00cb 13       		.uleb128 0x13
+ 601 00cc 3F       		.uleb128 0x3f
+ 602 00cd 19       		.uleb128 0x19
+ 603 00ce 3C       		.uleb128 0x3c
+ 604 00cf 19       		.uleb128 0x19
+ 605 00d0 00       		.byte	0
+ 606 00d1 00       		.byte	0
+ 607 00d2 10       		.uleb128 0x10
+ 608 00d3 35       		.uleb128 0x35
+ 609 00d4 00       		.byte	0
+ 610 00d5 49       		.uleb128 0x49
+ 611 00d6 13       		.uleb128 0x13
+ 612 00d7 00       		.byte	0
+ 613 00d8 00       		.byte	0
+ 614 00d9 11       		.uleb128 0x11
+ 615 00da 2E       		.uleb128 0x2e
+ 616 00db 00       		.byte	0
+ 617 00dc 3F       		.uleb128 0x3f
+ 618 00dd 19       		.uleb128 0x19
+ 619 00de 3C       		.uleb128 0x3c
+ 620 00df 19       		.uleb128 0x19
+ 621 00e0 6E       		.uleb128 0x6e
+ 622 00e1 0E       		.uleb128 0xe
+ 623 00e2 03       		.uleb128 0x3
+ 624 00e3 0E       		.uleb128 0xe
+ 625 00e4 3A       		.uleb128 0x3a
+ 626 00e5 0B       		.uleb128 0xb
+ 627 00e6 3B       		.uleb128 0x3b
+ 628 00e7 0B       		.uleb128 0xb
+ 629 00e8 00       		.byte	0
+ 630 00e9 00       		.byte	0
+ 631 00ea 00       		.byte	0
+ 632              		.section	.debug_loc,"",%progbits
+ 633              	.Ldebug_loc0:
+ 634              	.LLST0:
+ 635 0000 24000000 		.4byte	.LVL6
+ 636 0004 29000000 		.4byte	.LVL7-1
+ARM GAS  C:\Users\MYPC~1\AppData\Local\Temp\cc40mQTg.s 			page 13
+
+
+ 637 0008 0100     		.2byte	0x1
+ 638 000a 50       		.byte	0x50
+ 639 000b 00000000 		.4byte	0
+ 640 000f 00000000 		.4byte	0
+ 641              	.LLST1:
+ 642 0013 2A000000 		.4byte	.LVL7
+ 643 0017 2D000000 		.4byte	.LVL8-1
+ 644 001b 0100     		.2byte	0x1
+ 645 001d 50       		.byte	0x50
+ 646 001e 00000000 		.4byte	0
+ 647 0022 00000000 		.4byte	0
+ 648              	.LLST2:
+ 649 0026 12000000 		.4byte	.LVL2
+ 650 002a 16000000 		.4byte	.LVL3
+ 651 002e 0200     		.2byte	0x2
+ 652 0030 30       		.byte	0x30
+ 653 0031 9F       		.byte	0x9f
+ 654 0032 16000000 		.4byte	.LVL3
+ 655 0036 4E000000 		.4byte	.LVL13
+ 656 003a 0100     		.2byte	0x1
+ 657 003c 54       		.byte	0x54
+ 658 003d 50000000 		.4byte	.LVL14
+ 659 0041 60000000 		.4byte	.LFE64
+ 660 0045 0100     		.2byte	0x1
+ 661 0047 54       		.byte	0x54
+ 662 0048 00000000 		.4byte	0
+ 663 004c 00000000 		.4byte	0
+ 664              		.section	.debug_aranges,"",%progbits
+ 665 0000 1C000000 		.4byte	0x1c
+ 666 0004 0200     		.2byte	0x2
+ 667 0006 00000000 		.4byte	.Ldebug_info0
+ 668 000a 04       		.byte	0x4
+ 669 000b 00       		.byte	0
+ 670 000c 0000     		.2byte	0
+ 671 000e 0000     		.2byte	0
+ 672 0010 00000000 		.4byte	.LFB64
+ 673 0014 60000000 		.4byte	.LFE64-.LFB64
+ 674 0018 00000000 		.4byte	0
+ 675 001c 00000000 		.4byte	0
+ 676              		.section	.debug_ranges,"",%progbits
+ 677              	.Ldebug_ranges0:
+ 678 0000 00000000 		.4byte	.LFB64
+ 679 0004 60000000 		.4byte	.LFE64
+ 680 0008 00000000 		.4byte	0
+ 681 000c 00000000 		.4byte	0
+ 682              		.section	.debug_line,"",%progbits
+ 683              	.Ldebug_line0:
+ 684 0000 38020000 		.section	.debug_str,"MS",%progbits,1
+ 684      0200E701 
+ 684      00000201 
+ 684      FB0E0D00 
+ 684      01010101 
+ 685              	.LASF9:
+ 686 0000 5F5F696E 		.ascii	"__int32_t\000"
+ 686      7433325F 
+ 686      7400
+ 687              	.LASF33:
+ARM GAS  C:\Users\MYPC~1\AppData\Local\Temp\cc40mQTg.s 			page 14
+
+
+ 688 000a 433A5C55 		.ascii	"C:\\Users\\My PC\\Desktop\\PSoC\\VDAC Example\\VDAC"
+ 688      73657273 
+ 688      5C4D7920 
+ 688      50435C44 
+ 688      65736B74 
+ 689 0037 20457861 		.ascii	" Example.cydsn\000"
+ 689      6D706C65 
+ 689      2E637964 
+ 689      736E00
+ 690              	.LASF26:
+ 691 0046 4144435F 		.ascii	"ADC_GetResult16\000"
+ 691      47657452 
+ 691      6573756C 
+ 691      74313600 
+ 692              	.LASF22:
+ 693 0056 56444143 		.ascii	"VDAC_Start\000"
+ 693      5F537461 
+ 693      727400
+ 694              	.LASF20:
+ 695 0061 6F757470 		.ascii	"output_string\000"
+ 695      75745F73 
+ 695      7472696E 
+ 695      6700
+ 696              	.LASF13:
+ 697 006f 666C6F61 		.ascii	"float\000"
+ 697      7400
+ 698              	.LASF1:
+ 699 0075 756E7369 		.ascii	"unsigned char\000"
+ 699      676E6564 
+ 699      20636861 
+ 699      7200
+ 700              	.LASF31:
+ 701 0083 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 701      43313120 
+ 701      352E342E 
+ 701      31203230 
+ 701      31363036 
+ 702 00b6 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 702      20726576 
+ 702      6973696F 
+ 702      6E203233 
+ 702      37373135 
+ 703 00e9 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 703      66756E63 
+ 703      74696F6E 
+ 703      2D736563 
+ 703      74696F6E 
+ 704              	.LASF25:
+ 705 0111 4144435F 		.ascii	"ADC_StartConvert\000"
+ 705      53746172 
+ 705      74436F6E 
+ 705      76657274 
+ 705      00
+ 706              	.LASF5:
+ 707 0122 6C6F6E67 		.ascii	"long unsigned int\000"
+ 707      20756E73 
+ 707      69676E65 
+ARM GAS  C:\Users\MYPC~1\AppData\Local\Temp\cc40mQTg.s 			page 15
+
+
+ 707      6420696E 
+ 707      7400
+ 708              	.LASF3:
+ 709 0134 73686F72 		.ascii	"short unsigned int\000"
+ 709      7420756E 
+ 709      7369676E 
+ 709      65642069 
+ 709      6E7400
+ 710              	.LASF23:
+ 711 0147 55415254 		.ascii	"UART_Start\000"
+ 711      5F537461 
+ 711      727400
+ 712              	.LASF19:
+ 713 0152 766F6C74 		.ascii	"voltage\000"
+ 713      61676500 
+ 714              	.LASF35:
+ 715 015a 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 715      52784275 
+ 715      66666572 
+ 715      00
+ 716              	.LASF14:
+ 717 0167 646F7562 		.ascii	"double\000"
+ 717      6C6500
+ 718              	.LASF34:
+ 719 016e 6D61696E 		.ascii	"main\000"
+ 719      00
+ 720              	.LASF12:
+ 721 0173 75696E74 		.ascii	"uint16\000"
+ 721      313600
+ 722              	.LASF8:
+ 723 017a 756E7369 		.ascii	"unsigned int\000"
+ 723      676E6564 
+ 723      20696E74 
+ 723      00
+ 724              	.LASF7:
+ 725 0187 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 725      206C6F6E 
+ 725      6720756E 
+ 725      7369676E 
+ 725      65642069 
+ 726              	.LASF21:
+ 727 019e 4144435F 		.ascii	"ADC_Start\000"
+ 727      53746172 
+ 727      7400
+ 728              	.LASF10:
+ 729 01a8 696E7433 		.ascii	"int32_t\000"
+ 729      325F7400 
+ 730              	.LASF17:
+ 731 01b0 73697A65 		.ascii	"sizetype\000"
+ 731      74797065 
+ 731      00
+ 732              	.LASF27:
+ 733 01b9 4144435F 		.ascii	"ADC_CountsTo_Volts\000"
+ 733      436F756E 
+ 733      7473546F 
+ 733      5F566F6C 
+ 733      747300
+ARM GAS  C:\Users\MYPC~1\AppData\Local\Temp\cc40mQTg.s 			page 16
+
+
+ 734              	.LASF6:
+ 735 01cc 6C6F6E67 		.ascii	"long long int\000"
+ 735      206C6F6E 
+ 735      6720696E 
+ 735      7400
+ 736              	.LASF32:
+ 737 01da 6D61696E 		.ascii	"main.c\000"
+ 737      2E6300
+ 738              	.LASF15:
+ 739 01e1 63686172 		.ascii	"char\000"
+ 739      00
+ 740              	.LASF24:
+ 741 01e6 56444143 		.ascii	"VDAC_SetValue\000"
+ 741      5F536574 
+ 741      56616C75 
+ 741      6500
+ 742              	.LASF2:
+ 743 01f4 73686F72 		.ascii	"short int\000"
+ 743      7420696E 
+ 743      7400
+ 744              	.LASF11:
+ 745 01fe 75696E74 		.ascii	"uint8\000"
+ 745      3800
+ 746              	.LASF18:
+ 747 0204 4144435F 		.ascii	"ADC_reading\000"
+ 747      72656164 
+ 747      696E6700 
+ 748              	.LASF4:
+ 749 0210 6C6F6E67 		.ascii	"long int\000"
+ 749      20696E74 
+ 749      00
+ 750              	.LASF16:
+ 751 0219 6C6F6E67 		.ascii	"long double\000"
+ 751      20646F75 
+ 751      626C6500 
+ 752              	.LASF0:
+ 753 0225 7369676E 		.ascii	"signed char\000"
+ 753      65642063 
+ 753      68617200 
+ 754              	.LASF29:
+ 755 0231 55415254 		.ascii	"UART_PutString\000"
+ 755      5F507574 
+ 755      53747269 
+ 755      6E6700
+ 756              	.LASF28:
+ 757 0240 73707269 		.ascii	"sprintf\000"
+ 757      6E746600 
+ 758              	.LASF30:
+ 759 0248 43794465 		.ascii	"CyDelay\000"
+ 759      6C617900 
+ 760              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

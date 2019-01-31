@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="VDAC Example\VDAC Example\Source Files\main.c">
+<ExpandedNodeIds>
+<v>VDAC Example</v>
+<v>VDAC Example\VDAC Example</v>
+<v>VDAC Example\VDAC Example\TopDesign</v>
+<v>VDAC Example\VDAC Example\VDAC Example.cydwr</v>
+<v>VDAC Example\VDAC Example\VDAC Example.cydwr\Pins</v>
+<v>VDAC Example\VDAC Example\VDAC Example.cydwr\Analog</v>
+<v>VDAC Example\VDAC Example\VDAC Example.cydwr\Clocks</v>
+<v>VDAC Example\VDAC Example\VDAC Example.cydwr\Interrupts</v>
+<v>VDAC Example\VDAC Example\VDAC Example.cydwr\DMA</v>
+<v>VDAC Example\VDAC Example\VDAC Example.cydwr\System</v>
+<v>VDAC Example\VDAC Example\VDAC Example.cydwr\Directives</v>
+<v>VDAC Example\VDAC Example\VDAC Example.cydwr\Flash Security</v>
+<v>VDAC Example\VDAC Example\VDAC Example.cydwr\EEPROM</v>
+<v>VDAC Example\VDAC Example\Header Files</v>
+<v>VDAC Example\VDAC Example\Source Files</v>
+<v>VDAC Example\VDAC Example\Source Files\main.c</v>
+<v>VDAC Example\VDAC Example\Generated_Source</v>
+<v>VDAC Example\VDAC Example\Generated_Source\PSoC5</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>VDAC Example\VDAC Example\VDAC Example.cydwr\Directives</v>
+<v>VDAC Example\VDAC Example\VDAC Example.cydwr\Flash Security</v>
+<v>VDAC Example\VDAC Example\VDAC Example.cydwr\EEPROM</v>
+<v>VDAC Example\VDAC Example\Header Files</v>
+<v>VDAC Example\VDAC Example\Source Files</v>
+<v>VDAC Example\VDAC Example\Source Files\main.c</v>
+<v>VDAC Example\VDAC Example\Generated_Source</v>
+<v>VDAC Example\VDAC Example\Generated_Source\PSoC5</v>
+<v>VDAC Example\VDAC Example\Generated_Source\PSoC5\ADC</v>
+<v>VDAC Example\VDAC Example\Generated_Source\PSoC5\ADC_AMux</v>
+<v>VDAC Example\VDAC Example\Generated_Source\PSoC5\ADC_Ext_CP_Clk</v>
+<v>VDAC Example\VDAC Example\Generated_Source\PSoC5\ADC_IRQ</v>
+<v>VDAC Example\VDAC Example\Generated_Source\PSoC5\ADC_theACLK</v>
+<v>VDAC Example\VDAC Example\Generated_Source\PSoC5\cy_boot</v>
+<v>VDAC Example\VDAC Example\Generated_Source\PSoC5\Em_EEPROM_Dynamic</v>
+<v>VDAC Example\VDAC Example\Generated_Source\PSoC5\Pin_1</v>
+<v>VDAC Example\VDAC Example\Generated_Source\PSoC5\Pin_2</v>
+<v>VDAC Example\VDAC Example\Generated_Source\PSoC5\UART</v>
+<v>VDAC Example\VDAC Example\Generated_Source\PSoC5\UART_IntClock</v>
+<v>VDAC Example\VDAC Example\Generated_Source\PSoC5\VDAC</v>
+<v>VDAC Example\VDAC Example\Generated_Source\PSoC5\cycodeshareexport.ld</v>
+<v>VDAC Example\VDAC Example\Generated_Source\PSoC5\cycodeshareimport.ld</v>
+<v>VDAC Example\VDAC Example\Generated_Source\PSoC5\cycodeshareimport.scat</v>
+<v>VDAC Example\VDAC Example\Generated_Source\PSoC5\cydevice.h</v>
+<v>VDAC Example\VDAC Example\Generated_Source\PSoC5\cydevice_trm.h</v>
+<v>VDAC Example\VDAC Example\Generated_Source\PSoC5\cydevicegnu.inc</v>
+<v>VDAC Example\VDAC Example\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
+<v>VDAC Example\VDAC Example\Generated_Source\PSoC5\cydeviceiar.inc</v>
+<v>VDAC Example\VDAC Example\Generated_Source\PSoC5\cydeviceiar_trm.inc</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>VDAC Example</v>
+<v>VDAC Example\VDAC Example</v>
+<v>VDAC Example\VDAC Example\TopDesign</v>
+<v>VDAC Example\VDAC Example\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>VDAC Example</v>
+<v>VDAC Example\VDAC Example</v>
+<v>VDAC Example\VDAC Example\TopDesign</v>
+<v>VDAC Example\VDAC Example\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>VDAC Example</v>
+<v>VDAC Example\VDAC Example</v>
+<v>VDAC Example\VDAC Example\CortexM3</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_AMux.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_Ext_CP_Clk.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_INT.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_IRQ.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_PM.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_theACLK.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_1.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_2.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_BOOT.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_INT.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_IntClock.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_PM.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\VDAC.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\VDAC_PM.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\VDAC Example.elf</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\VDAC Example.hex</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\VDAC Example.map</v>
+<v>VDAC Example\VDAC Example\VDAC Example.gpdsc</v>
+<v>VDAC Example\VDAC Example\VDAC Example.rpt</v>
+<v>VDAC Example\VDAC Example\VDAC Example_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>VDAC Example</v>
+<v>VDAC Example\VDAC Example</v>
+<v>VDAC Example\VDAC Example\CortexM3</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_AMux.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_Ext_CP_Clk.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_INT.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_IRQ.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_PM.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_theACLK.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_1.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_2.lst</v>
+<v>VDAC Example\VDAC Example\CortexM3\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>VDAC Example</v>
+<v>VDAC Example\VDAC Example</v>
+<v>VDAC Example\VDAC Example\PSoC 5LP Architecture TRM</v>
+<v>VDAC Example\VDAC Example\CY8C58LP Family Datasheet</v>
+<v>VDAC Example\VDAC Example\System Reference Guides</v>
+<v>VDAC Example\VDAC Example\System Reference Guides\cy_boot_v5_10</v>
+<v>VDAC Example\VDAC Example\ADC_DelSig_v3_20.pdf</v>
+<v>VDAC Example\VDAC Example\cy_pins_v2_10</v>
+<v>VDAC Example\VDAC Example\cy_pins_v2_10\cy_pins_v2_10.pdf</v>
+<v>VDAC Example\VDAC Example\UART_v2_50.pdf</v>
+<v>VDAC Example\VDAC Example\VDAC8_v1_90.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>VDAC Example</v>
+<v>VDAC Example\VDAC Example</v>
+<v>VDAC Example\VDAC Example\PSoC 5LP Architecture TRM</v>
+<v>VDAC Example\VDAC Example\CY8C58LP Family Datasheet</v>
+<v>VDAC Example\VDAC Example\System Reference Guides</v>
+<v>VDAC Example\VDAC Example\System Reference Guides\cy_boot_v5_10</v>
+<v>VDAC Example\VDAC Example\ADC_DelSig_v3_20.pdf</v>
+<v>VDAC Example\VDAC Example\cy_pins_v2_10</v>
+<v>VDAC Example\VDAC Example\cy_pins_v2_10\cy_pins_v2_10.pdf</v>
+<v>VDAC Example\VDAC Example\UART_v2_50.pdf</v>
+<v>VDAC Example\VDAC Example\VDAC8_v1_90.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\VDAC Example.cydsn\VDAC Example.cydwr" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1053, 415" SelectedTabbedMdiWindow="fe41c698-ef6b-47ee-92a6-68aa42b1b219"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="d7456998-7e89-4c1d-83b3-9d9e25896489" /><DocumentWindow Key="C:\Users\My PC\Desktop\PSoC\VDAC Example\VDAC Example.cydsn\VDAC Example.cydwr" Guid="fe41c698-ef6b-47ee-92a6-68aa42b1b219" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
