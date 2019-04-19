@@ -1,4 +1,4 @@
-﻿#A Ground Based Visual Altitude Control of MAV
+#A Ground Based Visual Altitude Control of MAV
 
 ## Project Description
 The following project showcase the implementation of an altitude controller of a micro air vehicule, where the feedback is assured by a ground based camera.
